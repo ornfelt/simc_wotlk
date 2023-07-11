@@ -31,9 +31,9 @@
 #  include <stdint.h>
 #endif
 
-#if _MSC_VER < 1700
-#  define snprintf _snprintf
-#endif
+//#if _MSC_VER < 1700
+//#  define snprintf _snprintf
+//#endif
 
 #if defined(__GNUC__)
 #  define likely(x)       __builtin_expect((x),1)
