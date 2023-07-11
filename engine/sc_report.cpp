@@ -824,7 +824,10 @@ static void print_html_raid_summary( FILE*  file, sim_t* sim )
 {
   util_t::fprintf( file, "<a name=\"raid_summary\" /><h1>Raid Summary</h1>\n" );
 
+  // HEHE
   util_t::fprintf( file, "<style type=\"text/css\">\n  table.charts td, table.charts th { padding: 4px; border: 1px inset; }\n  table.charts { border: 1px outset; }</style>\n" );
+  //util_t::fprintf( file, "<style type=\"text/css\">\n body { background-color: #282828; } table.charts td, table.charts th { padding: 4px; border: 1px inset; }\n  table.charts { border: 1px outset; }</style>\n" );
+
 
   assert( sim ->  dps_charts.size() ==
           sim -> gear_charts.size() );
