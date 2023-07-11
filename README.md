@@ -1,11 +1,11 @@
-#Compile:
+# Compile:
 
 cd engine
 
 make OS=WINDOWS
 
 
-#Example usage:
+# Example usage:
 
 .\simc.exe Shaman_T10.simc html=Shaman_T10.html
 
@@ -13,7 +13,9 @@ make OS=WINDOWS
 
 .\simc.exe Mage_T9.simc > mage.txt
 
-## Not working with wotlk version:
+Also see READ_ME_FIRST.txt and Examples.simc
+
+## These are not working with wotlk version:
 
 .\simc.exe wowhead=14320165 save=Paladin_T9_05_11_55.simc
 
@@ -21,4 +23,4 @@ make OS=WINDOWS
 
 .\simc.exe armory=us,illidan,john calculate_scale_factors=1 html=john.html
 
-Also see READ_ME_FIRST.txt
+https://github.com/simulationcraft/simc
