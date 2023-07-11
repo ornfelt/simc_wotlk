@@ -26,9 +26,13 @@
 
 #if defined( _MSC_VER )
 #  include "../vs/stdint.h"
-#  define snprintf _snprintf
+#  include <locale.h>
 #else
 #  include <stdint.h>
+#endif
+
+#if _MSC_VER < 1700
+#  define snprintf _snprintf
 #endif
 
 #if defined(__GNUC__)
