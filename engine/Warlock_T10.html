@@ -1,0 +1,973 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Simulationcraft Results</title>
+</head>
+<body>
+<h1>SimulationCraft 335.1 for World of Warcraft release 3.3.3</h1>
+<ul>
+  <li>Timestamp: Wed Jul 12 07:25:53 2023
+</li>
+  <li>Iterations: 1000</li>
+  <li>Fight Length: 300</li>
+  <li>Smooth RNG: false</li>
+</ul>
+<hr />
+<h1>Table of Contents</h1>
+<ul>
+ <li> <a href="#raid_summary"> Raid Summary </a> </li>
+ <li> <a href="#auras_debuffs"> Auras and Debuffs </a> </li>
+ <li> <a href="#Warlock_T10_55_00_16"> Warlock_T10_55_00_16 </a> </li>
+ <li> <a href="#Warlock_T10_56_00_15"> Warlock_T10_56_00_15 </a> </li>
+ <li> <a href="#Warlock_T10_00_56_15"> Warlock_T10_00_56_15 </a> </li>
+ <li> <a href="#Warlock_T10_00_56_15_rDPS"> Warlock_T10_00_56_15_rDPS </a> </li>
+ <li> <a href="#Warlock_T10_00_13_58"> Warlock_T10_00_13_58 </a> </li>
+ <li> <a href="#Warlock_T10_00_18_53"> Warlock_T10_00_18_53 </a> </li>
+</ul>
+<br /><hr />
+<a name="raid_summary" /><h1>Raid Summary</h1>
+<style type="text/css">
+  table.charts td, table.charts th { padding: 4px; border: 1px inset; }
+  table.charts { border: 1px outset; }</style>
+<table class="charts">
+ <tr> <td><img src="http://chart.apis.google.com/chart?chs=450x150&amp;cht=bhg&amp;chbh=15&amp;chd=t:14076|14071|13569|13524|13356|13251&amp;chds=0,35189&amp;chco=9482C9,9482C9,9482C9,9482C9,9482C9,9482C9&amp;chm=t++14076++Warlock_t10_56_00_15,9482C9,0,0,15|t++14071++Warlock_t10_55_00_16,9482C9,1,0,15|t++13569++Warlock_t10_00_56_15,9482C9,2,0,15|t++13524++Warlock_t10_00_13_58,9482C9,3,0,15|t++13356++Warlock_t10_00_18_53,9482C9,4,0,15|t++13251++Warlock_t10_00_56_15_rdps,9482C9,5,0,15&amp;chtt=DPS+Ranking&amp;chts=000000,20" /></td> <td><img src="http://chart.apis.google.com/chart?chs=450x220&amp;cht=bhs&amp;chbh=15&amp;chd=t:0,0,10,10,10,10|0,0,10,10,10,10|1417,1417,1427,1427,1427,1427|212,212,51,51,51,622|2950,2950,2964,2964,2964,2983|0,0,0,0,0,0|0,0,0,0,0,0|0,0,0,0,0,0|0,0,0,0,0,0|0,0,0,0,0,0|289,289,369,369,369,369|1094,1094,1162,1162,1162,925|1253,1253,1231,1231,1231,960&amp;chds=0,7306&amp;chco=C79C6E,ABD473,69CCF0,C0C0C0,9482C9,8A8A8A,59ADCC,FFF569,C55D54,C0B84F,C41F3B,F58CBA,2459FF&amp;chxt=y&amp;chxl=0:|Warlock_t10_00_56_15_rdps|Warlock_t10_00_18_53|Warlock_t10_00_13_58|Warlock_t10_00_56_15|Warlock_t10_55_00_16|Warlock_t10_56_00_15&amp;chxs=0,000000,15&amp;chdl=Str|Agi|Int|Spi|SP|SPen|MP5|AP|Exp|ArPen|Hit|Crit|Haste&amp;chdlp=t&amp;chtt=Gear+Overview&amp;chts=000000,20" /></td> </tr>
+</table> <br />
+<table class="charts">
+ <tr> <td><img src="http://chart.apis.google.com/chart?chs=500x330&amp;cht=bhg&amp;chbh=10&amp;chd=t:24606|24329|22321|22267|20695|20640|18961|18886|15570|15566|14747|14163|14003|13991|12983|12969|11335|10767|10530|10505&amp;chds=0,61516&amp;chco=C41F3B,C41F3B,9482C9,9482C9,C41F3B,C41F3B,C41F3B,C41F3B,9482C9,9482C9,C41F3B,C41F3B,9482C9,9482C9,C41F3B,C41F3B,C41F3B,C41F3B,C41F3B,C41F3B&amp;chm=t++24606++immolate+(Warlock_t10_00_56_15),9482C9,0,0,10|t++24329++immolate+(Warlock_t10_00_56_15_rdps),9482C9,1,0,10|t++22321++unstable_affliction+(Warlock_t10_56_00_15),9482C9,2,0,10|t++22267++unstable_affliction+(Warlock_t10_55_00_16),9482C9,3,0,10|t++20695++immolate+(Warlock_t10_00_13_58),9482C9,4,0,10|t++20640++immolate+(Warlock_t10_00_18_53),9482C9,5,0,10|t++18961++conflagrate+(Warlock_t10_00_13_58),9482C9,6,0,10|t++18886++conflagrate+(Warlock_t10_00_18_53),9482C9,7,0,10|t++15570++curse_of_agony+(Warlock_t10_55_00_16),9482C9,8,0,10|t++15566++curse_of_agony+(Warlock_t10_56_00_15),9482C9,9,0,10|t++14747++soul_fire+(Warlock_t10_00_56_15),9482C9,10,0,10|t++14163++soul_fire+(Warlock_t10_00_56_15_rdps),9482C9,11,0,10|t++14003++drain_soul+(Warlock_t10_55_00_16),9482C9,12,0,10|t++13991++drain_soul+(Warlock_t10_56_00_15),9482C9,13,0,10|t++12983++chaos_bolt+(Warlock_t10_00_18_53),9482C9,14,0,10|t++12969++chaos_bolt+(Warlock_t10_00_13_58),9482C9,15,0,10|t++11335++incinerate+(Warlock_t10_00_56_15),9482C9,16,0,10|t++10767++incinerate+(Warlock_t10_00_56_15_rdps),9482C9,17,0,10|t++10530++incinerate+(Warlock_t10_00_18_53),9482C9,18,0,10|t++10505++incinerate+(Warlock_t10_00_13_58),9482C9,19,0,10&amp;chtt=Raid+Damage+Per+Execute+Time&amp;chts=000000,20" /></td> </tr>
+ <tr> <td><img src="http://chart.apis.google.com/chart?chs=500x150&amp;cht=bhg&amp;chbh=10&amp;chd=t:10404|10136|8790|8340|7643|7640|5528|5524&amp;chds=0,61516&amp;chco=9482C9,9482C9,9482C9,9482C9,9482C9,9482C9,9482C9,9482C9&amp;chm=t++10404++corruption+(Warlock_t10_00_56_15_rdps),9482C9,0,0,10|t++10136++corruption+(Warlock_t10_00_56_15),9482C9,1,0,10|t++8790++shadow_bolt+(Warlock_t10_00_56_15),9482C9,2,0,10|t++8340++shadow_bolt+(Warlock_t10_00_56_15_rdps),9482C9,3,0,10|t++7643++shadow_bolt+(Warlock_t10_55_00_16),9482C9,4,0,10|t++7640++shadow_bolt+(Warlock_t10_56_00_15),9482C9,5,0,10|t++5528++haunt+(Warlock_t10_56_00_15),9482C9,6,0,10|t++5524++haunt+(Warlock_t10_55_00_16),9482C9,7,0,10&amp;chtt=Raid+Damage+Per+Execute+Time&amp;chts=000000,20" /></td> </tr>
+</table> <br />
+<img src="http://chart.apis.google.com/chart?chs=525x130&amp;cht=bvs&amp;chd=t:0,0,1,2,1,1,3,1,5,7,5,5,10,14,18,23,29,25,35,27,51,55,48,41,60,64,64,32,52,47,55,36,25,28,32,12,24,17,13,16,7,3,2,1,0,0,0,1,0,0&amp;chds=0,64&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=283|avg=300|max=310&amp;chxp=0,1,64,100&amp;chtt=Timeline+Distribution&amp;chts=000000,20" /> <br />
+<hr />
+<a name="Warlock_T10_55_00_16" /><h1>Warlock_T10_55_00_16&nbsp;:&nbsp;14071dps</h1>
+<style type="text/css">
+  table.player td, table.player th { padding: 4px; border: 1px inset; }
+  table.player { border: 1px outset; }</style>
+<table class="player">
+  <tr> <th>Name</th> <th>Race</th> <th>Class</th> <th>Tree</th> <th>Level</th> </tr>
+  <tr> <td>Warlock_T10_55_00_16</td> <td>undead</td> <td>warlock</td> <td>affliction</td> <td>80</td>
+</table><br />
+<table class="player">
+  <tr> <th>DPS</th> <th>Error</th> <th>Range</th> <th>DPR</th> <th>RPS-Out</th> <th>RPS-In</th> <th>Resource</th> <th>Waiting</th> <th>ApM</th> </tr>
+  <tr> <td>14071</td> <td>0.1%</td> <td>5.8%</td> <td>41.6</td> <td>338.2</td> <td>252.8</td> <td>mana</td> <td>0.0%</td> <td>39.0</td>
+</table><br />
+<table class="player">
+  <tr> <th>Origin</th> <td><a href="http://profiler.wowhead.com/profile=20850045">http://profiler.wowhead.com/profile=20850045</a></td>
+</table><br />
+<table class="player">
+  <tr> <th>Talents</th> <td><a href="http://www.wowarmory.com/talent-calc.xml?cid=9&tal=235002200102351025350033115100000000000000000000000000055001005">http://www.wowarmory.com/talent-calc.xml?cid=9&tal=235002200102351025350033115100000000000000000000000000055001005</a></td>
+</table><br />
+<table class="player"> <tr> <th>Glyphs</th> <td>quick_decay</td> <td>haunt</td> <td>life_tap</td> </tr> </table> <br />
+<table class="player">
+  <tr> <td><img name="chart_action_dpet" src="http://chart.apis.google.com/chart?chs=500x275&amp;cht=bhg&amp;chd=t:22267|15570|14003|7643|5524|852|519&amp;chds=0,44534&amp;chco=9482C9,9482C9,9482C9,9482C9,9482C9,9482C9,C79C6E&amp;chm=t++22267++unstable_affliction,9482C9,0,0,15|t++15570++curse_of_agony,9482C9,1,0,15|t++14003++drain_soul,9482C9,2,0,15|t++7643++shadow_bolt,9482C9,3,0,15|t++5524++haunt,9482C9,4,0,15|t++852++shadow_bite,9482C9,5,0,15|t++519++felhunter_melee,C79C6E,6,0,15&amp;chtt=Warlock_t10_55_00_16|Damage+Per+Execute+Time&amp;chts=000000,20" />
+</td> <td><img name="chart_action_dmg" src="http://chart.apis.google.com/chart?chs=500x280&amp;cht=p&amp;chd=t:32,25,15,11,5,5,4,4&amp;chds=0,100&amp;chco=9482C9,9482C9,9482C9,9482C9,9482C9,9482C9,9482C9,C79C6E&amp;chl=shadow_bolt|corruption|drain_soul|unstable_affliction|shadow_bite|curse_of_agony|haunt|felhunter_melee&amp;chtt=Warlock_T10_55_00_16+Damage+Sources&amp;chts=000000,20" />
+</td> </tr>
+  <tr> <td><img name="chart_gains" src="http://chart.apis.google.com/chart?chs=550x260&amp;cht=p&amp;chd=t:42,29,17,6,4,1&amp;chds=0,100&amp;chco=2459FF&amp;chl=life_tap|initial_mana|replenishment|blessing_of_wisdom|judgement_of_wisdom|spirit_intellect_regen&amp;chtt=Warlock_t10_55_00_16+Resource+Gains&amp;chts=000000,20" />
+</td> <td><img name="chart_timeline_resource" src="http://chart.apis.google.com/chart?chs=425x150&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:A8866555443221100zzyxxwwvuuutsrrrqqpoonnmswvvuuttssrqqpoonnnmllkkjjihhggffeedccbbdikkjjiihggffeeddcbbaaZYYXXXWVVUUTTSRRQQQTXZZZYYXWWVVUUTTSSRQQPPOONMMLLKKJIIIHGGGGKNONNMMLLKJJIIHHGGFFFFFFFGGHHHIIIHHGGGFFFFFFFGGHHIIIIHHHHGGGGGGGGGHHHHIIIIHHHGGGFFFFFFFFFFFFEFFFFFFFEFFFGGGHHIIIJJJJJJJJJJJJJJKKKKKKJJIH&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|max=31266&amp;chtt=Warlock_t10_55_00_16+mana+Timeline&amp;chts=000000,20&amp;chco=2459FF" />
+</td> </tr>
+  <tr> <td><img name="chart_timeline_dps" src="http://chart.apis.google.com/chart?chs=425x130&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:aYcceeggiiikmoqqtuuutrtrsrqppooonmmmlllkklkjjjijjjijjkjkjkjjijjkkllnmnmmllkkjkklllklklklkkjkjkklllkllmlmlmlmlnmooooppqqqqqppooooooooooooonnmmmmmnmnmmlmllkkijijijjkjkjkjkjkijijikjkjkjkjkjkjjikjkklklklklklklkmmnnpoqprqsrtssrsrsrssssssttutvvxxz0224566777777777787777665554443333332210zzyyxwvvuuuuuuutss&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|avg=14071|max=20273&amp;chxp=1,1,69,100&amp;chtt=Warlock_t10_55_00_16+DPS+Timeline&amp;chts=000000,20" />
+</td> <td><img name="chart_distribution_dps" src="http://chart.apis.google.com/chart?chs=525x130&amp;cht=bvs&amp;chf=c,ls,0,EEEEEE,0.125,FFFFFF,0.125&amp;chg=100,100&amp;chd=t:1,0,1,2,3,2,4,2,3,7,14,13,15,17,29,22,29,39,43,39,50,63,51,45,39,65,49,46,41,31,30,31,42,20,16,15,27,11,10,4,8,7,5,4,1,2,1,0,0,1&amp;chds=0,65&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=13274|avg=14071|max=14910&amp;chxp=0,1,49,100&amp;chtt=Warlock_t10_55_00_16+DPS+Distribution&amp;chts=000000,20" />
+</td> </tr>
+</tr></table> <br />
+<table class="player">
+ <tr> <th>Ability</th> <th>DPS</th> <th>DPS%</th> <th>Count</th> <th>Interval</th> <th>DPE</th> <th>DPET</th> <th>DPR</th> <th>Hit</th> <th>Crit</th> <th>Max</th> <th>Crit%</th> <th>M%</th> <th>D%</th> <th>P%</th> <th>G%</th> <th>Ticks</th> <th>T-Hit</th> <th>T-Crit</th> <th>T-Crit%</th> <th>T-M%</th> </tr>
+ <tr> <th>Warlock_T10_55_00_16</th> <th>14071</th> </tr>
+ <tr> <td>corruption</td> <td>3449</td> <td>24.5%</td> <td>2.0</td> <td>199.17sec</td> <td>522042</td> <td>454196</td> <td>1029.7</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>157</td> <td>3893</td> <td>8146</td> <td>63.6%</td> <td>0.0%</td> </tr>
+ <tr> <td>curse_of_agony</td> <td>661</td> <td>4.7%</td> <td>11.5</td> <td>25.12sec</td> <td>17252</td> <td>15570</td> <td>47.7</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>137</td> <td>1446</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>drain_soul</td> <td>2067</td> <td>14.7%</td> <td>10.2</td> <td>5.91sec</td> <td>60592</td> <td>14003</td> <td>119.5</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>28</td> <td>22151</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>haunt</td> <td>584</td> <td>4.1%</td> <td>28.1</td> <td>10.77sec</td> <td>6215</td> <td>5524</td> <td>14.3</td> <td>4021</td> <td>8445</td> <td>13023</td> <td>49.6%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>shadow_bolt</td> <td>4517</td> <td>32.1%</td> <td>109.1</td> <td>2.15sec</td> <td>12399</td> <td>7643</td> <td>19.7</td> <td>7755</td> <td>16209</td> <td>25888</td> <td>54.9%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>unstable_affliction</td> <td>1570</td> <td>11.2%</td> <td>18.6</td> <td>16.09sec</td> <td>25232</td> <td>22267</td> <td>46.5</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>91</td> <td>3149</td> <td>6579</td> <td>58.4%</td> <td>0.0%</td> </tr>
+ <tr> <th>pet - felhunter</th> <th>1225</th> </tr>
+ <tr> <td>felhunter_melee</td> <td>518</td> <td>3.7%</td> <td>192.2</td> <td>1.56sec</td> <td>808</td> <td>519</td> <td>0.0</td> <td>771</td> <td>1543</td> <td>1979</td> <td>13.0%</td> <td>0.0%</td> <td>2.3%</td> <td>0.0%</td> <td>24.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>shadow_bite</td> <td>706</td> <td>5.0%</td> <td>150.5</td> <td>2.00sec</td> <td>1405</td> <td>852</td> <td>30.6</td> <td>1273</td> <td>2548</td> <td>3626</td> <td>12.7%</td> <td>0.0%</td> <td>2.3%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Dynamic Buffs</th> <th>Start</th> <th>Refresh</th> <th>Interval</th> <th>Trigger</th> <th>Up-Time</th> <th>Benefit</th> </tr>
+  <tr> <td>ashen_band_of_endless_destruction</td> <td>4.2</td> <td>0.0</td> <td>73.8sec</td> <td>73.8sec</td> <td>14%</td> <td>14%</td> </tr>
+  <tr> <td>bloodlust</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>13%</td> <td>13%</td> </tr>
+  <tr> <td>dislodged_foreign_object</td> <td>5.1</td> <td>0.0</td> <td>59.2sec</td> <td>59.2sec</td> <td>33%</td> <td>33%</td> </tr>
+  <tr> <td>eradication</td> <td>6.8</td> <td>2.4</td> <td>40.0sec</td> <td>28.6sec</td> <td>27%</td> <td>28%</td> </tr>
+  <tr> <td>haunted</td> <td>1.4</td> <td>26.7</td> <td>194.1sec</td> <td>10.8sec</td> <td>99%</td> <td>100%</td> </tr>
+  <tr> <td>life_tap_glyph</td> <td>5.8</td> <td>3.4</td> <td>53.9sec</td> <td>33.5sec</td> <td>99%</td> <td>97%</td> </tr>
+  <tr> <td>lightweave_embroidery</td> <td>5.0</td> <td>0.0</td> <td>64.3sec</td> <td>64.3sec</td> <td>25%</td> <td>25%</td> </tr>
+  <tr> <td>phylactery_of_the_nameless_lich</td> <td>3.0</td> <td>0.0</td> <td>102.2sec</td> <td>102.2sec</td> <td>20%</td> <td>20%</td> </tr>
+  <tr> <td>shadow_embrace</td> <td>1.2</td> <td>136.1</td> <td>277.6sec</td> <td>2.1sec</td> <td>99%</td> <td>100%</td> </tr>
+  <tr> <td>shadow_trance</td> <td>5.5</td> <td>0.8</td> <td>43.5sec</td> <td>39.5sec</td> <td>12%</td> <td>4%</td> </tr>
+  <tr> <td>speed_potion</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+  <tr> <td>tier10_4pc_caster</td> <td>8.9</td> <td>4.7</td> <td>31.8sec</td> <td>20.1sec</td> <td>38%</td> <td>38%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Constant Buffs</th> </tr>
+  <tr> <td>arcane_brilliance</td> </tr>
+  <tr> <td>blessing_of_kings</td> </tr>
+  <tr> <td>blessing_of_might</td> </tr>
+  <tr> <td>blessing_of_wisdom</td> </tr>
+  <tr> <td>demonic_pact</td> </tr>
+  <tr> <td>divine_spirit</td> </tr>
+  <tr> <td>fel_armor</td> </tr>
+  <tr> <td>fortitude</td> </tr>
+  <tr> <td>mark_of_the_wild</td> </tr>
+  <tr> <td>replenishment</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Up-Times</th> <th>%</th> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Procs</th> <th>Count</th> <th>Interval</th> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>62.3</td> <td>4.7sec</td> </tr>
+  <tr> <td>life_tap</td> <td>9.2</td> <td>33.5sec</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Gains</th> <th>mana</th> <th>Overflow</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>6496.0</td> <td>0.7%</td> </tr>
+  <tr> <td>initial_mana</td> <td>31266.0</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>4807.7</td> <td>0.0%</td> </tr>
+  <tr> <td>life_tap</td> <td>44993.3</td> <td>10.0%</td> </tr>
+  <tr> <td>replenishment</td> <td>18599.2</td> <td>0.7%</td> </tr>
+  <tr> <td>spirit_intellect_regen</td> <td>842.0</td> <td>16.0%</td> </tr>
+  <tr> <th>pet - felhunter</th> <th>mana</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>42.4</td> <td>99.4%</td> </tr>
+  <tr> <td>initial_mana</td> <td>11815.4</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>1747.4</td> <td>56.2%</td> </tr>
+  <tr> <td>mp5_regen</td> <td>23.2</td> <td>98.8%</td> </tr>
+  <tr> <td>replenishment</td> <td>70.3</td> <td>99.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th></th> <th>Action Priority List</th> </tr>
+  <tr> <th>0</th> <td>flask,type=frost_wyrm</td> </tr>
+  <tr> <th>1</th> <td>food,type=fish_feast</td> </tr>
+  <tr> <th>2</th> <td>spell_stone</td> </tr>
+  <tr> <th>3</th> <td>fel_armor</td> </tr>
+  <tr> <th>4</th> <td>summon_pet,felhunter</td> </tr>
+  <tr> <th>5</th> <td>snapshot_stats</td> </tr>
+  <tr> <th>6</th> <td>life_tap,buff_refresh=1</td> </tr>
+  <tr> <th>7</th> <td>shadow_bolt,isb_trigger=1</td> </tr>
+  <tr> <th>8</th> <td>wild_magic_potion,if=!in_combat</td> </tr>
+  <tr> <th>9</th> <td>speed_potion,if=buff.bloodlust.react</td> </tr>
+  <tr> <th>10</th> <td>haunt,if=(buff.haunted.remains<3)|(dot.corruption.remains<4)</td> </tr>
+  <tr> <th>11</th> <td>corruption,if=!ticking</td> </tr>
+  <tr> <th>12</th> <td>unstable_affliction,time_to_die>=5,if=(dot.unstable_affliction.remains<cast_time)</td> </tr>
+  <tr> <th>13</th> <td>curse_of_agony,time_to_die>=20,if=!ticking</td> </tr>
+  <tr> <th>14</th> <td>drain_soul,health_percentage<=25,interrupt=1</td> </tr>
+  <tr> <th>15</th> <td>shadow_bolt</td> </tr>
+  <tr> <th>16</th> <td>life_tap</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Stat</th> <th>Raid-Buffed</th> <th>Un-Buffed</th> <th>Gear Amount</th> </tr>
+ <tr> <th>Strength</th>  <td>308</td> <td>58</td> <td>0</td> </tr>
+ <tr> <th>Agility</th>   <td>316</td> <td>65</td> <td>0</td> </tr>
+ <tr> <th>Stamina</th>   <td>2001</td> <td>1521</td> <td>1432</td> </tr>
+ <tr> <th>Intellect</th> <td>1846</td> <td>1574</td> <td>1417</td> </tr>
+ <tr> <th>Spirit</th>    <td>558</td> <td>383</td> <td>212</td> </tr>
+ <tr> <th>Health</th>    <td>26554</td> <td>22194</td> <td>0</td> </tr>
+ <tr> <th>Mana</th>      <td>31266</td> <td>27186</td> <td>0</td> </tr>
+ <tr> <th>Spell Power</th>       <td>4421</td> <td>3430</td> <td>3430</td> </tr>
+ <tr> <th>Spell Hit</th>         <td>11.02%</td> <td>11.02%</td> <td>289</td> </tr>
+ <tr> <th>Spell Crit</th>        <td>41.61%</td> <td>34.98%</td> <td>1094</td> </tr>
+ <tr> <th>Spell Haste</th>       <td>51.46%</td> <td>38.22%</td> <td>1253</td> </tr>
+ <tr> <th>Spell Penetration</th> <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Mana Per 5</th>        <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Attack Power</th>      <td>1173</td> <td>48</td> <td>0</td> </tr>
+ <tr> <th>Melee Hit</th>         <td>8.81%</td> <td>8.81%</td> <td>289</td> </tr>
+ <tr> <th>Melee Crit</th>        <td>37.74%</td> <td>27.74%</td> <td>1094</td> </tr>
+ <tr> <th>Melee Haste</th>       <td>73.10%</td> <td>38.22%</td> <td>1253</td> </tr>
+ <tr> <th>Expertise</th>         <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor Penetration</th> <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor</th>       <td>4748</td> <td>2439</td> <td>2309</td> </tr>
+ <tr> <th>Block Value</th> <td>154</td> <td>29</td> <td>0</td> </tr>
+ <tr> <th>Defense</th>     <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Tank-Miss</th>   <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Dodge</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Parry</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Block</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Crit</th>   <td>13.90%</td> <td>13.90%</td> <td>0</td> </tr>
+</table> <br />
+<hr />
+<a name="Warlock_T10_56_00_15" /><h1>Warlock_T10_56_00_15&nbsp;:&nbsp;14076dps</h1>
+<style type="text/css">
+  table.player td, table.player th { padding: 4px; border: 1px inset; }
+  table.player { border: 1px outset; }</style>
+<table class="player">
+  <tr> <th>Name</th> <th>Race</th> <th>Class</th> <th>Tree</th> <th>Level</th> </tr>
+  <tr> <td>Warlock_T10_56_00_15</td> <td>undead</td> <td>warlock</td> <td>affliction</td> <td>80</td>
+</table><br />
+<table class="player">
+  <tr> <th>DPS</th> <th>Error</th> <th>Range</th> <th>DPR</th> <th>RPS-Out</th> <th>RPS-In</th> <th>Resource</th> <th>Waiting</th> <th>ApM</th> </tr>
+  <tr> <td>14076</td> <td>0.1%</td> <td>6.4%</td> <td>40.4</td> <td>348.2</td> <td>267.4</td> <td>mana</td> <td>0.0%</td> <td>39.0</td>
+</table><br />
+<table class="player">
+  <tr> <th>Origin</th> <td><a href="http://profiler.wowhead.com/profile=20983156">http://profiler.wowhead.com/profile=20983156</a></td>
+</table><br />
+<table class="player">
+  <tr> <th>Talents</th> <td><a href="http://www.wowarmory.com/talent-calc.xml?cid=9&tal=235002200102351025351033115100000000000000000000000000055000005">http://www.wowarmory.com/talent-calc.xml?cid=9&tal=235002200102351025351033115100000000000000000000000000055000005</a></td>
+</table><br />
+<table class="player"> <tr> <th>Glyphs</th> <td>quick_decay</td> <td>haunt</td> <td>life_tap</td> </tr> </table> <br />
+<table class="player">
+  <tr> <td><img name="chart_action_dpet" src="http://chart.apis.google.com/chart?chs=500x275&amp;cht=bhg&amp;chd=t:22321|15566|13991|7640|5528|853|520&amp;chds=0,44642&amp;chco=9482C9,9482C9,9482C9,9482C9,9482C9,9482C9,C79C6E&amp;chm=t++22321++unstable_affliction,9482C9,0,0,15|t++15566++curse_of_agony,9482C9,1,0,15|t++13991++drain_soul,9482C9,2,0,15|t++7640++shadow_bolt,9482C9,3,0,15|t++5528++haunt,9482C9,4,0,15|t++853++shadow_bite,9482C9,5,0,15|t++520++felhunter_melee,C79C6E,6,0,15&amp;chtt=Warlock_t10_56_00_15|Damage+Per+Execute+Time&amp;chts=000000,20" />
+</td> <td><img name="chart_action_dmg" src="http://chart.apis.google.com/chart?chs=500x280&amp;cht=p&amp;chd=t:32,24,15,11,5,5,4,4&amp;chds=0,100&amp;chco=9482C9,9482C9,9482C9,9482C9,9482C9,9482C9,9482C9,C79C6E&amp;chl=shadow_bolt|corruption|drain_soul|unstable_affliction|shadow_bite|curse_of_agony|haunt|felhunter_melee&amp;chtt=Warlock_T10_56_00_15+Damage+Sources&amp;chts=000000,20" />
+</td> </tr>
+  <tr> <td><img name="chart_gains" src="http://chart.apis.google.com/chart?chs=550x260&amp;cht=p&amp;chd=t:44,28,17,6,4,1&amp;chds=0,100&amp;chco=2459FF&amp;chl=dark_pact|initial_mana|replenishment|blessing_of_wisdom|judgement_of_wisdom|spirit_intellect_regen&amp;chtt=Warlock_t10_56_00_15+Resource+Gains&amp;chts=000000,20" />
+</td> <td><img name="chart_timeline_resource" src="http://chart.apis.google.com/chart?chs=425x150&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:A886655544322100zzyyxwwvuuutssrrqqpoonnmlswwvuuttssrqqpoonnmmllkkjiihggffeedccbbacilkkjjihhggffeddccbaaZZYXXWWVVUUTSSRRQPQTZbbaaZZYXXWWVVUTTSSRRQPPOONMMLLKJJIIHHGILOQPPOONMMLLKJJIIHHGGFFFFFGHHHIIIIIIIIHHGGGGFGGGHHIIJJJJJJJIIIHHHHHHHHHHHHHHHHHHHHHHHGHHGGGGGGGGGGGGGGGGGHHHIIIJJJKKLLLLLLMMMMNNNNNMMLKJ&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|max=31266&amp;chtt=Warlock_t10_56_00_15+mana+Timeline&amp;chts=000000,20&amp;chco=2459FF" />
+</td> </tr>
+  <tr> <td><img name="chart_timeline_dps" src="http://chart.apis.google.com/chart?chs=425x130&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:ZYcceeggiiikmoqqttuutrtrrrqppooonmmmlklkklkjjjijjjijjkjkjkjjijjkkllmmmmmklkkjkjkklklkkkkjkjjjkklklkllllmlmlmlmmonooppqqqpqpooonoooooooooonnmmmmmnmnmmlmllkkijijijikjkjkjkjjijijikjkjkjkjkjkjjikjkklklklklklklkmlnnpoqprqsrsrsrsrsrssssssttutvuwwyz123455667666667787777665555443333321100zyxxwvuututututtsr&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|avg=14076|max=20372&amp;chxp=1,1,69,100&amp;chtt=Warlock_t10_56_00_15+DPS+Timeline&amp;chts=000000,20" />
+</td> <td><img name="chart_distribution_dps" src="http://chart.apis.google.com/chart?chs=525x130&amp;cht=bvs&amp;chf=c,ls,0,EEEEEE,0.125,FFFFFF,0.125&amp;chg=100,100&amp;chd=t:3,2,1,1,2,5,3,12,7,15,21,24,24,28,36,49,42,49,57,50,62,38,54,38,53,57,46,34,34,26,20,21,26,13,10,16,4,9,1,2,2,1,1,0,0,0,0,0,0,1&amp;chds=0,62&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=13299|avg=14076|max=15106&amp;chxp=0,1,43,100&amp;chtt=Warlock_t10_56_00_15+DPS+Distribution&amp;chts=000000,20" />
+</td> </tr>
+</tr></table> <br />
+<table class="player">
+ <tr> <th>Ability</th> <th>DPS</th> <th>DPS%</th> <th>Count</th> <th>Interval</th> <th>DPE</th> <th>DPET</th> <th>DPR</th> <th>Hit</th> <th>Crit</th> <th>Max</th> <th>Crit%</th> <th>M%</th> <th>D%</th> <th>P%</th> <th>G%</th> <th>Ticks</th> <th>T-Hit</th> <th>T-Crit</th> <th>T-Crit%</th> <th>T-M%</th> </tr>
+ <tr> <th>Warlock_T10_56_00_15</th> <th>14076</th> </tr>
+ <tr> <td>corruption</td> <td>3442</td> <td>24.5%</td> <td>1.9</td> <td>200.44sec</td> <td>538431</td> <td>468950</td> <td>1062.0</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>157</td> <td>3891</td> <td>8136</td> <td>63.5%</td> <td>0.0%</td> </tr>
+ <tr> <td>curse_of_agony</td> <td>661</td> <td>4.7%</td> <td>11.5</td> <td>25.13sec</td> <td>17243</td> <td>15566</td> <td>47.6</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>137</td> <td>1445</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>drain_soul</td> <td>2066</td> <td>14.7%</td> <td>10.2</td> <td>5.87sec</td> <td>60455</td> <td>13991</td> <td>119.2</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>28</td> <td>22158</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>haunt</td> <td>584</td> <td>4.1%</td> <td>28.1</td> <td>10.76sec</td> <td>6218</td> <td>5528</td> <td>14.3</td> <td>4033</td> <td>8421</td> <td>12749</td> <td>49.8%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>shadow_bolt</td> <td>4523</td> <td>32.1%</td> <td>109.4</td> <td>2.15sec</td> <td>12383</td> <td>7640</td> <td>18.9</td> <td>7755</td> <td>16208</td> <td>25888</td> <td>54.8%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>unstable_affliction</td> <td>1576</td> <td>11.2%</td> <td>18.7</td> <td>16.09sec</td> <td>25299</td> <td>22321</td> <td>46.6</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>91</td> <td>3153</td> <td>6585</td> <td>58.7%</td> <td>0.0%</td> </tr>
+ <tr> <th>pet - felhunter</th> <th>1226</th> </tr>
+ <tr> <td>felhunter_melee</td> <td>519</td> <td>3.7%</td> <td>192.2</td> <td>1.56sec</td> <td>808</td> <td>520</td> <td>0.0</td> <td>772</td> <td>1543</td> <td>1953</td> <td>13.1%</td> <td>0.0%</td> <td>2.3%</td> <td>0.0%</td> <td>23.9%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>shadow_bite</td> <td>707</td> <td>5.0%</td> <td>150.5</td> <td>2.00sec</td> <td>1408</td> <td>853</td> <td>30.6</td> <td>1274</td> <td>2545</td> <td>3579</td> <td>12.8%</td> <td>0.0%</td> <td>2.3%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Dynamic Buffs</th> <th>Start</th> <th>Refresh</th> <th>Interval</th> <th>Trigger</th> <th>Up-Time</th> <th>Benefit</th> </tr>
+  <tr> <td>ashen_band_of_endless_destruction</td> <td>4.2</td> <td>0.0</td> <td>74.5sec</td> <td>74.5sec</td> <td>14%</td> <td>14%</td> </tr>
+  <tr> <td>bloodlust</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>13%</td> <td>13%</td> </tr>
+  <tr> <td>dislodged_foreign_object</td> <td>5.1</td> <td>0.0</td> <td>59.4sec</td> <td>59.4sec</td> <td>33%</td> <td>33%</td> </tr>
+  <tr> <td>eradication</td> <td>6.9</td> <td>2.6</td> <td>39.8sec</td> <td>27.9sec</td> <td>27%</td> <td>29%</td> </tr>
+  <tr> <td>haunted</td> <td>1.4</td> <td>26.7</td> <td>190.4sec</td> <td>10.8sec</td> <td>99%</td> <td>100%</td> </tr>
+  <tr> <td>life_tap_glyph</td> <td>5.9</td> <td>3.1</td> <td>54.9sec</td> <td>34.7sec</td> <td>99%</td> <td>98%</td> </tr>
+  <tr> <td>lightweave_embroidery</td> <td>5.0</td> <td>0.0</td> <td>64.3sec</td> <td>64.3sec</td> <td>25%</td> <td>25%</td> </tr>
+  <tr> <td>phylactery_of_the_nameless_lich</td> <td>3.0</td> <td>0.0</td> <td>102.2sec</td> <td>102.2sec</td> <td>20%</td> <td>20%</td> </tr>
+  <tr> <td>shadow_embrace</td> <td>1.2</td> <td>136.4</td> <td>271.8sec</td> <td>2.1sec</td> <td>99%</td> <td>100%</td> </tr>
+  <tr> <td>shadow_trance</td> <td>5.6</td> <td>0.8</td> <td>42.2sec</td> <td>38.0sec</td> <td>12%</td> <td>4%</td> </tr>
+  <tr> <td>speed_potion</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+  <tr> <td>tier10_4pc_caster</td> <td>9.0</td> <td>4.8</td> <td>31.6sec</td> <td>20.0sec</td> <td>38%</td> <td>39%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Constant Buffs</th> </tr>
+  <tr> <td>arcane_brilliance</td> </tr>
+  <tr> <td>blessing_of_kings</td> </tr>
+  <tr> <td>blessing_of_might</td> </tr>
+  <tr> <td>blessing_of_wisdom</td> </tr>
+  <tr> <td>demonic_pact</td> </tr>
+  <tr> <td>divine_spirit</td> </tr>
+  <tr> <td>fel_armor</td> </tr>
+  <tr> <td>fortitude</td> </tr>
+  <tr> <td>mark_of_the_wild</td> </tr>
+  <tr> <td>replenishment</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Up-Times</th> <th>%</th> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Procs</th> <th>Count</th> <th>Interval</th> </tr>
+  <tr> <td>dark_pact</td> <td>9.0</td> <td>34.7sec</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>62.3</td> <td>4.7sec</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Gains</th> <th>mana</th> <th>Overflow</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>6496.0</td> <td>0.7%</td> </tr>
+  <tr> <td>dark_pact</td> <td>49366.8</td> <td>10.0%</td> </tr>
+  <tr> <td>initial_mana</td> <td>31266.0</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>4802.3</td> <td>0.0%</td> </tr>
+  <tr> <td>replenishment</td> <td>18599.2</td> <td>0.7%</td> </tr>
+  <tr> <td>spirit_intellect_regen</td> <td>844.1</td> <td>16.0%</td> </tr>
+  <tr> <th>pet - felhunter</th> <th>mana</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>40.5</td> <td>99.4%</td> </tr>
+  <tr> <td>initial_mana</td> <td>11815.4</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>1744.9</td> <td>56.4%</td> </tr>
+  <tr> <td>mp5_regen</td> <td>22.5</td> <td>98.9%</td> </tr>
+  <tr> <td>replenishment</td> <td>67.6</td> <td>99.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th></th> <th>Action Priority List</th> </tr>
+  <tr> <th>0</th> <td>flask,type=frost_wyrm</td> </tr>
+  <tr> <th>1</th> <td>food,type=fish_feast</td> </tr>
+  <tr> <th>2</th> <td>spell_stone</td> </tr>
+  <tr> <th>3</th> <td>fel_armor</td> </tr>
+  <tr> <th>4</th> <td>summon_pet,felhunter</td> </tr>
+  <tr> <th>5</th> <td>snapshot_stats</td> </tr>
+  <tr> <th>6</th> <td>dark_pact,buff_refresh=1</td> </tr>
+  <tr> <th>7</th> <td>shadow_bolt,isb_trigger=1</td> </tr>
+  <tr> <th>8</th> <td>wild_magic_potion,if=!in_combat</td> </tr>
+  <tr> <th>9</th> <td>speed_potion,if=buff.bloodlust.react</td> </tr>
+  <tr> <th>10</th> <td>haunt,if=(buff.haunted.remains<3)|(dot.corruption.remains<4)</td> </tr>
+  <tr> <th>11</th> <td>corruption,if=!ticking</td> </tr>
+  <tr> <th>12</th> <td>unstable_affliction,time_to_die>=5,if=(dot.unstable_affliction.remains<cast_time)</td> </tr>
+  <tr> <th>13</th> <td>curse_of_agony,time_to_die>=20,if=!ticking</td> </tr>
+  <tr> <th>14</th> <td>drain_soul,health_percentage<=25,interrupt=1</td> </tr>
+  <tr> <th>15</th> <td>shadow_bolt</td> </tr>
+  <tr> <th>16</th> <td>dark_pact</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Stat</th> <th>Raid-Buffed</th> <th>Un-Buffed</th> <th>Gear Amount</th> </tr>
+ <tr> <th>Strength</th>  <td>308</td> <td>58</td> <td>0</td> </tr>
+ <tr> <th>Agility</th>   <td>316</td> <td>65</td> <td>0</td> </tr>
+ <tr> <th>Stamina</th>   <td>2001</td> <td>1521</td> <td>1432</td> </tr>
+ <tr> <th>Intellect</th> <td>1846</td> <td>1574</td> <td>1417</td> </tr>
+ <tr> <th>Spirit</th>    <td>558</td> <td>383</td> <td>212</td> </tr>
+ <tr> <th>Health</th>    <td>26554</td> <td>22194</td> <td>0</td> </tr>
+ <tr> <th>Mana</th>      <td>31266</td> <td>27186</td> <td>0</td> </tr>
+ <tr> <th>Spell Power</th>       <td>4421</td> <td>3430</td> <td>3430</td> </tr>
+ <tr> <th>Spell Hit</th>         <td>11.02%</td> <td>11.02%</td> <td>289</td> </tr>
+ <tr> <th>Spell Crit</th>        <td>41.61%</td> <td>34.98%</td> <td>1094</td> </tr>
+ <tr> <th>Spell Haste</th>       <td>51.46%</td> <td>38.22%</td> <td>1253</td> </tr>
+ <tr> <th>Spell Penetration</th> <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Mana Per 5</th>        <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Attack Power</th>      <td>1173</td> <td>48</td> <td>0</td> </tr>
+ <tr> <th>Melee Hit</th>         <td>8.81%</td> <td>8.81%</td> <td>289</td> </tr>
+ <tr> <th>Melee Crit</th>        <td>37.74%</td> <td>27.74%</td> <td>1094</td> </tr>
+ <tr> <th>Melee Haste</th>       <td>73.10%</td> <td>38.22%</td> <td>1253</td> </tr>
+ <tr> <th>Expertise</th>         <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor Penetration</th> <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor</th>       <td>4748</td> <td>2439</td> <td>2309</td> </tr>
+ <tr> <th>Block Value</th> <td>154</td> <td>29</td> <td>0</td> </tr>
+ <tr> <th>Defense</th>     <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Tank-Miss</th>   <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Dodge</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Parry</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Block</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Crit</th>   <td>13.90%</td> <td>13.90%</td> <td>0</td> </tr>
+</table> <br />
+<hr />
+<a name="Warlock_T10_00_56_15" /><h1>Warlock_T10_00_56_15&nbsp;:&nbsp;13569dps</h1>
+<style type="text/css">
+  table.player td, table.player th { padding: 4px; border: 1px inset; }
+  table.player { border: 1px outset; }</style>
+<table class="player">
+  <tr> <th>Name</th> <th>Race</th> <th>Class</th> <th>Tree</th> <th>Level</th> </tr>
+  <tr> <td>Warlock_T10_00_56_15</td> <td>undead</td> <td>warlock</td> <td>demonology</td> <td>80</td>
+</table><br />
+<table class="player">
+  <tr> <th>DPS</th> <th>Error</th> <th>Range</th> <th>DPR</th> <th>RPS-Out</th> <th>RPS-In</th> <th>Resource</th> <th>Waiting</th> <th>ApM</th> </tr>
+  <tr> <td>13569</td> <td>0.1%</td> <td>6.3%</td> <td>35.2</td> <td>384.9</td> <td>295.4</td> <td>mana</td> <td>0.0%</td> <td>46.4</td>
+</table><br />
+<table class="player">
+  <tr> <th>Origin</th> <td><a href="http://profiler.wowhead.com/profile=20983242">http://profiler.wowhead.com/profile=20983242</a></td>
+</table><br />
+<table class="player">
+  <tr> <th>Talents</th> <td><a href="http://www.wowarmory.com/talent-calc.xml?cid=9&tal=000000000000000000000000000000320330113520253013522135155000005">http://www.wowarmory.com/talent-calc.xml?cid=9&tal=000000000000000000000000000000320330113520253013522135155000005</a></td>
+</table><br />
+<table class="player"> <tr> <th>Glyphs</th> <td>felguard</td> <td>quick_decay</td> <td>life_tap</td> </tr> </table> <br />
+<table class="player">
+  <tr> <td><img name="chart_action_dpet" src="http://chart.apis.google.com/chart?chs=500x335&amp;cht=bhg&amp;chd=t:30078|24606|20458|14747|11335|10136|8790|1770|1643&amp;chds=0,60157&amp;chco=C41F3B,C41F3B,9482C9,C41F3B,C41F3B,9482C9,9482C9,C79C6E,C79C6E&amp;chm=t++30078++immolation,C41F3B,0,0,15|t++24606++immolate,C41F3B,1,0,15|t++20458++curse_of_doom,9482C9,2,0,15|t++14747++soul_fire,C41F3B,3,0,15|t++11335++incinerate,C41F3B,4,0,15|t++10136++corruption,9482C9,5,0,15|t++8790++shadow_bolt,9482C9,6,0,15|t++1770++felguard_melee,C79C6E,7,0,15|t++1643++cleave,C79C6E,8,0,15&amp;chtt=Warlock_t10_00_56_15|Damage+Per+Execute+Time&amp;chts=000000,20" />
+</td> <td><img name="chart_action_dmg" src="http://chart.apis.google.com/chart?chs=500x290&amp;cht=p&amp;chd=t:28,26,13,10,8,7,3,3,2&amp;chds=0,100&amp;chco=9482C9,C41F3B,C79C6E,C41F3B,C41F3B,9482C9,C79C6E,9482C9,C41F3B&amp;chl=shadow_bolt|soul_fire|felguard_melee|incinerate|immolate|corruption|cleave|curse_of_doom|immolation&amp;chtt=Warlock_T10_00_56_15+Damage+Sources&amp;chts=000000,20" />
+</td> </tr>
+  <tr> <td><img name="chart_gains" src="http://chart.apis.google.com/chart?chs=550x260&amp;cht=p&amp;chd=t:47,27,16,5,5,0&amp;chds=0,100&amp;chco=2459FF&amp;chl=life_tap|initial_mana|replenishment|blessing_of_wisdom|judgement_of_wisdom|spirit_intellect_regen&amp;chtt=Warlock_t10_00_56_15+Resource+Gains&amp;chts=000000,20" />
+</td> <td><img name="chart_timeline_resource" src="http://chart.apis.google.com/chart?chs=425x150&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:A875555332110zzyxuuttssrqqpoonmmmllkjjiihmooonnmmllkjiihhggffeecbbbaZZZYYYZZabcbbbbbaZZYYYYYZbccccbbaaZYYYYabcdddccbaaZZZYZZZYZaYXXWVVUTTSSRQPPONMMLLLLLLKKJJJJNTWXXXYYZabcccbbaZZYYZZaabbbbbaaaZZZZZZaaaaabbbbaaZZZYYXXXXWWWWVVVUUTTTSSSSSSSSSTTUUVWWWVVVUUUUTSRRRQPPOOONNMMLLKJIIIHHIIIJJKKLLLLLLLLLLKKJI&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|max=32258&amp;chtt=Warlock_t10_00_56_15+mana+Timeline&amp;chts=000000,20&amp;chco=2459FF" />
+</td> </tr>
+  <tr> <td><img name="chart_timeline_dps" src="http://chart.apis.google.com/chart?chs=425x130&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:Xbeeghhghijmoqsvwvtuttsqqqppppomkjhhgfgggffefededdediiiiihhhhhiiihihhhhggcdeeeffffedddeefeffffeddddddddeffffffggikkkjjjjjkllmmnopppoonlnooppqqponmmmlkiiiihgffeeedddeddcbbcddefghhggggggggghhhhggfeddddeffffffghhijklnnnnoppqqqrsstsssrrrrsuvvvvvvvvvvwxy0112333334566767787765443210zyxwvuuutsrpoonnmmmmmm&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|avg=13569|max=21305&amp;chxp=1,1,64,100&amp;chtt=Warlock_t10_00_56_15+DPS+Timeline&amp;chts=000000,20" />
+</td> <td><img name="chart_distribution_dps" src="http://chart.apis.google.com/chart?chs=525x130&amp;cht=bvs&amp;chf=c,ls,0,EEEEEE,0.125,FFFFFF,0.125&amp;chg=100,100&amp;chd=t:3,2,2,3,6,2,6,18,8,9,13,20,23,29,31,24,39,52,45,47,51,46,55,32,36,44,42,33,47,34,27,21,15,20,21,19,11,19,11,7,5,9,5,4,1,1,0,0,1,1&amp;chds=0,55&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=12787|avg=13569|max=14493&amp;chxp=0,1,46,100&amp;chtt=Warlock_t10_00_56_15+DPS+Distribution&amp;chts=000000,20" />
+</td> </tr>
+</tr></table> <br />
+<table class="player">
+ <tr> <th>Ability</th> <th>DPS</th> <th>DPS%</th> <th>Count</th> <th>Interval</th> <th>DPE</th> <th>DPET</th> <th>DPR</th> <th>Hit</th> <th>Crit</th> <th>Max</th> <th>Crit%</th> <th>M%</th> <th>D%</th> <th>P%</th> <th>G%</th> <th>Ticks</th> <th>T-Hit</th> <th>T-Crit</th> <th>T-Crit%</th> <th>T-M%</th> </tr>
+ <tr> <th>Warlock_T10_00_56_15</th> <th>13569</th> </tr>
+ <tr> <td>corruption</td> <td>902</td> <td>6.6%</td> <td>24.2</td> <td>12.13sec</td> <td>11150</td> <td>10136</td> <td>20.7</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>145</td> <td>1862</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>curse_of_doom</td> <td>343</td> <td>2.5%</td> <td>4.5</td> <td>60.89sec</td> <td>22611</td> <td>20458</td> <td>39.1</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>4</td> <td>25504</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>immolate</td> <td>1122</td> <td>8.3%</td> <td>12.3</td> <td>24.68sec</td> <td>27315</td> <td>24606</td> <td>41.7</td> <td>2215</td> <td>4626</td> <td>7064</td> <td>61.8%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>96</td> <td>1811</td> <td>3784</td> <td>61.4%</td> <td>0.0%</td> </tr>
+ <tr> <td>immolation</td> <td>332</td> <td>2.4%</td> <td>3.0</td> <td>124.15sec</td> <td>33168</td> <td>30078</td> <td>13.4</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>45</td> <td>2211</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>incinerate</td> <td>1393</td> <td>10.3%</td> <td>30.7</td> <td>5.98sec</td> <td>13585</td> <td>11335</td> <td>25.2</td> <td>7895</td> <td>16492</td> <td>27208</td> <td>66.2%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>shadow_bolt</td> <td>3779</td> <td>27.9%</td> <td>77.1</td> <td>2.71sec</td> <td>14686</td> <td>8790</td> <td>22.4</td> <td>8540</td> <td>17870</td> <td>30009</td> <td>65.9%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>soul_fire</td> <td>3473</td> <td>25.6%</td> <td>49.3</td> <td>1.73sec</td> <td>21092</td> <td>14747</td> <td>60.8</td> <td>11636</td> <td>24935</td> <td>38787</td> <td>71.1%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <th>pet - felguard</th> <th>2225</th> </tr>
+ <tr> <td>cleave</td> <td>457</td> <td>3.4%</td> <td>50.5</td> <td>6.00sec</td> <td>2711</td> <td>1643</td> <td>8.1</td> <td>2045</td> <td>4093</td> <td>5318</td> <td>33.6%</td> <td>0.0%</td> <td>1.1%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>felguard_melee</td> <td>1768</td> <td>13.0%</td> <td>205.8</td> <td>1.45sec</td> <td>2574</td> <td>1770</td> <td>0.0</td> <td>2035</td> <td>4071</td> <td>5334</td> <td>33.6%</td> <td>0.0%</td> <td>1.2%</td> <td>0.0%</td> <td>24.1%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Dynamic Buffs</th> <th>Start</th> <th>Refresh</th> <th>Interval</th> <th>Trigger</th> <th>Up-Time</th> <th>Benefit</th> </tr>
+  <tr> <td>ashen_band_of_endless_destruction</td> <td>4.4</td> <td>0.0</td> <td>73.2sec</td> <td>73.2sec</td> <td>14%</td> <td>14%</td> </tr>
+  <tr> <td>bloodlust</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>13%</td> <td>13%</td> </tr>
+  <tr> <td>decimation</td> <td>1.0</td> <td>50.0</td> <td>0.0sec</td> <td>1.7sec</td> <td>29%</td> <td>100%</td> </tr>
+  <tr> <td>demonic_empowerment</td> <td>7.4</td> <td>0.0</td> <td>42.7sec</td> <td>42.7sec</td> <td>35%</td> <td>39%</td> </tr>
+  <tr> <td>demonic_frenzy</td> <td>1.0</td> <td>202.4</td> <td>0.0sec</td> <td>1.5sec</td> <td>99%</td> <td>99%</td> </tr>
+  <tr> <td>dislodged_foreign_object</td> <td>5.3</td> <td>0.0</td> <td>58.4sec</td> <td>58.4sec</td> <td>34%</td> <td>34%</td> </tr>
+  <tr> <td>life_tap_glyph</td> <td>4.5</td> <td>8.7</td> <td>81.6sec</td> <td>23.3sec</td> <td>99%</td> <td>98%</td> </tr>
+  <tr> <td>lightweave_embroidery</td> <td>5.0</td> <td>0.0</td> <td>63.3sec</td> <td>63.3sec</td> <td>25%</td> <td>25%</td> </tr>
+  <tr> <td>metamorphosis</td> <td>3.0</td> <td>0.0</td> <td>126.7sec</td> <td>0.0sec</td> <td>30%</td> <td>32%</td> </tr>
+  <tr> <td>molten_core</td> <td>13.8</td> <td>3.6</td> <td>20.4sec</td> <td>16.0sec</td> <td>25%</td> <td>78%</td> </tr>
+  <tr> <td>phylactery_of_the_nameless_lich</td> <td>3.0</td> <td>0.0</td> <td>103.5sec</td> <td>103.5sec</td> <td>20%</td> <td>20%</td> </tr>
+  <tr> <td>tier10_4pc_caster</td> <td>9.0</td> <td>5.5</td> <td>31.8sec</td> <td>19.2sec</td> <td>40%</td> <td>40%</td> </tr>
+  <tr> <td>wild_magic_potion_crit</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+  <tr> <td>wild_magic_potion_sp</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Constant Buffs</th> </tr>
+  <tr> <td>arcane_brilliance</td> </tr>
+  <tr> <td>blessing_of_kings</td> </tr>
+  <tr> <td>blessing_of_might</td> </tr>
+  <tr> <td>blessing_of_wisdom</td> </tr>
+  <tr> <td>demonic_pact</td> </tr>
+  <tr> <td>divine_spirit</td> </tr>
+  <tr> <td>fel_armor</td> </tr>
+  <tr> <td>fortitude</td> </tr>
+  <tr> <td>mark_of_the_wild</td> </tr>
+  <tr> <td>replenishment</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Up-Times</th> <th>%</th> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Procs</th> <th>Count</th> <th>Interval</th> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>70.7</td> <td>4.2sec</td> </tr>
+  <tr> <td>life_tap</td> <td>13.1</td> <td>23.3sec</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Gains</th> <th>mana</th> <th>Overflow</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>6496.0</td> <td>0.7%</td> </tr>
+  <tr> <td>initial_mana</td> <td>32257.6</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>5453.0</td> <td>0.0%</td> </tr>
+  <tr> <td>life_tap</td> <td>57347.0</td> <td>7.1%</td> </tr>
+  <tr> <td>replenishment</td> <td>19189.2</td> <td>0.7%</td> </tr>
+  <tr> <td>spirit_intellect_regen</td> <td>0.3</td> <td>99.7%</td> </tr>
+  <tr> <th>pet - felguard</th> <th>mana</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>1130.1</td> <td>82.7%</td> </tr>
+  <tr> <td>initial_mana</td> <td>14401.0</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>3266.3</td> <td>50.4%</td> </tr>
+  <tr> <td>mp5_regen</td> <td>10495.2</td> <td>72.1%</td> </tr>
+  <tr> <td>replenishment</td> <td>1852.4</td> <td>78.5%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th></th> <th>Action Priority List</th> </tr>
+  <tr> <th>0</th> <td>flask,type=frost_wyrm</td> </tr>
+  <tr> <th>1</th> <td>food,type=fish_feast</td> </tr>
+  <tr> <th>2</th> <td>spell_stone</td> </tr>
+  <tr> <th>3</th> <td>fel_armor</td> </tr>
+  <tr> <th>4</th> <td>summon_pet,felguard</td> </tr>
+  <tr> <th>5</th> <td>snapshot_stats</td> </tr>
+  <tr> <th>6</th> <td>life_tap,buff_refresh=1</td> </tr>
+  <tr> <th>7</th> <td>shadow_bolt,isb_trigger=1</td> </tr>
+  <tr> <th>8</th> <td>wild_magic_potion,if=(buff.bloodlust.react)|(!in_combat)</td> </tr>
+  <tr> <th>9</th> <td>demonic_empowerment</td> </tr>
+  <tr> <th>10</th> <td>metamorphosis</td> </tr>
+  <tr> <th>11</th> <td>immolate,time_to_die>=4,if=(dot.immolate.remains<cast_time)</td> </tr>
+  <tr> <th>12</th> <td>immolation,if=(buff.tier10_4pc_caster.react)|(buff.metamorphosis.remains<15)</td> </tr>
+  <tr> <th>13</th> <td>curse_of_doom,time_to_die>=70</td> </tr>
+  <tr> <th>14</th> <td>soul_fire,if=(buff.decimation.react)&(buff.molten_core.react)</td> </tr>
+  <tr> <th>15</th> <td>corruption,time_to_die>=8,if=!ticking</td> </tr>
+  <tr> <th>16</th> <td>soul_fire,if=buff.decimation.react</td> </tr>
+  <tr> <th>17</th> <td>incinerate,if=buff.molten_core.react</td> </tr>
+  <tr> <th>18</th> <td>life_tap,trigger=12000,health_percentage>=35,if=buff.metamorphosis.down</td> </tr>
+  <tr> <th>19</th> <td>curse_of_agony,moving=1,if=(!ticking)&!(dot.curse_of_doom.remains>0)</td> </tr>
+  <tr> <th>20</th> <td>shadow_bolt</td> </tr>
+  <tr> <th>21</th> <td>life_tap</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Stat</th> <th>Raid-Buffed</th> <th>Un-Buffed</th> <th>Gear Amount</th> </tr>
+ <tr> <th>Strength</th>  <td>319</td> <td>68</td> <td>10</td> </tr>
+ <tr> <th>Agility</th>   <td>327</td> <td>75</td> <td>10</td> </tr>
+ <tr> <th>Stamina</th>   <td>2214</td> <td>1684</td> <td>1442</td> </tr>
+ <tr> <th>Intellect</th> <td>1857</td> <td>1584</td> <td>1427</td> </tr>
+ <tr> <th>Spirit</th>    <td>381</td> <td>222</td> <td>51</td> </tr>
+ <tr> <th>Health</th>    <td>29278</td> <td>24323</td> <td>0</td> </tr>
+ <tr> <th>Mana</th>      <td>32258</td> <td>28040</td> <td>0</td> </tr>
+ <tr> <th>Spell Power</th>       <td>4937</td> <td>3447</td> <td>3447</td> </tr>
+ <tr> <th>Spell Hit</th>         <td>14.07%</td> <td>14.07%</td> <td>369</td> </tr>
+ <tr> <th>Spell Crit</th>        <td>53.16%</td> <td>46.52%</td> <td>1162</td> </tr>
+ <tr> <th>Spell Haste</th>       <td>56.67%</td> <td>37.55%</td> <td>1231</td> </tr>
+ <tr> <th>Spell Penetration</th> <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Mana Per 5</th>        <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Attack Power</th>      <td>1185</td> <td>58</td> <td>0</td> </tr>
+ <tr> <th>Melee Hit</th>         <td>11.25%</td> <td>11.25%</td> <td>369</td> </tr>
+ <tr> <th>Melee Crit</th>        <td>39.44%</td> <td>29.42%</td> <td>1162</td> </tr>
+ <tr> <th>Melee Haste</th>       <td>79.05%</td> <td>37.55%</td> <td>1231</td> </tr>
+ <tr> <th>Expertise</th>         <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor Penetration</th> <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor</th>       <td>4770</td> <td>2459</td> <td>2309</td> </tr>
+ <tr> <th>Block Value</th> <td>160</td> <td>34</td> <td>0</td> </tr>
+ <tr> <th>Defense</th>     <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Tank-Miss</th>   <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Dodge</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Parry</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Block</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Crit</th>   <td>13.90%</td> <td>13.90%</td> <td>0</td> </tr>
+</table> <br />
+<hr />
+<a name="Warlock_T10_00_56_15_rDPS" /><h1>Warlock_T10_00_56_15_rDPS&nbsp;:&nbsp;13251dps</h1>
+<style type="text/css">
+  table.player td, table.player th { padding: 4px; border: 1px inset; }
+  table.player { border: 1px outset; }</style>
+<table class="player">
+  <tr> <th>Name</th> <th>Race</th> <th>Class</th> <th>Tree</th> <th>Level</th> </tr>
+  <tr> <td>Warlock_T10_00_56_15_rDPS</td> <td>undead</td> <td>warlock</td> <td>demonology</td> <td>80</td>
+</table><br />
+<table class="player">
+  <tr> <th>DPS</th> <th>Error</th> <th>Range</th> <th>DPR</th> <th>RPS-Out</th> <th>RPS-In</th> <th>Resource</th> <th>Waiting</th> <th>ApM</th> </tr>
+  <tr> <td>13251</td> <td>0.1%</td> <td>8.2%</td> <td>35.8</td> <td>369.6</td> <td>285.2</td> <td>mana</td> <td>0.0%</td> <td>44.4</td>
+</table><br />
+<table class="player">
+  <tr> <th>Origin</th> <td><a href="http://profiler.wowhead.com/profile=21345827">http://profiler.wowhead.com/profile=21345827</a></td>
+</table><br />
+<table class="player">
+  <tr> <th>Talents</th> <td><a href="http://www.wowarmory.com/talent-calc.xml?cid=9&tal=000000000000000000000000000000320330113520253013522135155000005">http://www.wowarmory.com/talent-calc.xml?cid=9&tal=000000000000000000000000000000320330113520253013522135155000005</a></td>
+</table><br />
+<table class="player"> <tr> <th>Glyphs</th> <td>felguard</td> <td>quick_decay</td> <td>life_tap</td> </tr> </table> <br />
+<table class="player">
+  <tr> <td><img name="chart_action_dpet" src="http://chart.apis.google.com/chart?chs=500x335&amp;cht=bhg&amp;chd=t:29521|24329|20658|14163|10767|10404|8340|1801|1665&amp;chds=0,59042&amp;chco=C41F3B,C41F3B,9482C9,C41F3B,C41F3B,9482C9,9482C9,C79C6E,C79C6E&amp;chm=t++29521++immolation,C41F3B,0,0,15|t++24329++immolate,C41F3B,1,0,15|t++20658++curse_of_doom,9482C9,2,0,15|t++14163++soul_fire,C41F3B,3,0,15|t++10767++incinerate,C41F3B,4,0,15|t++10404++corruption,9482C9,5,0,15|t++8340++shadow_bolt,9482C9,6,0,15|t++1801++felguard_melee,C79C6E,7,0,15|t++1665++cleave,C79C6E,8,0,15&amp;chtt=Warlock_t10_00_56_15_rdps|Damage+Per+Execute+Time&amp;chts=000000,20" />
+</td> <td><img name="chart_action_dmg" src="http://chart.apis.google.com/chart?chs=500x290&amp;cht=p&amp;chd=t:27,25,14,10,9,7,3,3,2&amp;chds=0,100&amp;chco=9482C9,C41F3B,C79C6E,C41F3B,C41F3B,9482C9,C79C6E,9482C9,C41F3B&amp;chl=shadow_bolt|soul_fire|felguard_melee|incinerate|immolate|corruption|cleave|curse_of_doom|immolation&amp;chtt=Warlock_T10_00_56_15_rDPS+Damage+Sources&amp;chts=000000,20" />
+</td> </tr>
+  <tr> <td><img name="chart_gains" src="http://chart.apis.google.com/chart?chs=550x260&amp;cht=p&amp;chd=t:46,27,16,6,5,0&amp;chds=0,100&amp;chco=2459FF&amp;chl=life_tap|initial_mana|replenishment|blessing_of_wisdom|judgement_of_wisdom|spirit_intellect_regen&amp;chtt=Warlock_t10_00_56_15_rdps+Resource+Gains&amp;chts=000000,20" />
+</td> <td><img name="chart_timeline_resource" src="http://chart.apis.google.com/chart?chs=425x150&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:A8855553331100zzywuuttsssrrqponnmmmlkkjjimqqqppoonnmllkkjiiihhgfeeeddcbbaaZZYYYZabdedddcbbbaZZYYYYZabcccccbbaZZZYYYZabccccccbaaZYXWVVUTTSSRQQPPONMLLKKJJIIHIIJLORUWYZbbccccbbaaZZYZZabbcbbbbbbaaZZZZZZaaaabbbbbbaaZZZYYXXXXWWWWWVVUUUTTTTTSSSTTUVVWXXXXXXXWWVVUTSSSRRQQPPPOONNMLLKKKJJKKLLMNNOOOOOOOOONNMLK&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|max=32258&amp;chtt=Warlock_t10_00_56_15_rdps+mana+Timeline&amp;chts=000000,20&amp;chco=2459FF" />
+</td> </tr>
+  <tr> <td><img name="chart_timeline_dps" src="http://chart.apis.google.com/chart?chs=425x130&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:VYZabcddddegijnnpooonommmmlllmlkjihfgegggfffffeedeeeiiiijijhihiiiiiiijiihddeedeefffffefefeeeeffffffeededeeeeeeeefhhgggggghiijjjkllmmnmllmnnnonnmmmmmmkjiihggfffffeeeeddcccddefhhhhhggghhhhhhhhhggfeddddeeeeeeeffgghijkkkkkllllmmnooonnnnnopqsttttuuuvuvwyz012333333456777787765443210yyxwuuttssqppoonmmmmmn&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|avg=13251|max=21431&amp;chxp=1,1,62,100&amp;chtt=Warlock_t10_00_56_15_rdps+DPS+Timeline&amp;chts=000000,20" />
+</td> <td><img name="chart_distribution_dps" src="http://chart.apis.google.com/chart?chs=525x130&amp;cht=bvs&amp;chf=c,ls,0,EEEEEE,0.125,FFFFFF,0.125&amp;chg=100,100&amp;chd=t:1,0,0,0,0,0,2,3,4,9,4,8,11,23,14,31,31,36,41,54,59,54,63,61,58,69,68,53,31,41,27,31,19,21,22,12,8,7,5,5,3,3,3,2,1,0,0,1,0,1&amp;chds=0,69&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=12212|avg=13251|max=14381&amp;chxp=0,1,48,100&amp;chtt=Warlock_t10_00_56_15_rdps+DPS+Distribution&amp;chts=000000,20" />
+</td> </tr>
+</tr></table> <br />
+<table class="player">
+ <tr> <th>Ability</th> <th>DPS</th> <th>DPS%</th> <th>Count</th> <th>Interval</th> <th>DPE</th> <th>DPET</th> <th>DPR</th> <th>Hit</th> <th>Crit</th> <th>Max</th> <th>Crit%</th> <th>M%</th> <th>D%</th> <th>P%</th> <th>G%</th> <th>Ticks</th> <th>T-Hit</th> <th>T-Crit</th> <th>T-Crit%</th> <th>T-M%</th> </tr>
+ <tr> <th>Warlock_T10_00_56_15_rDPS</th> <th>13251</th> </tr>
+ <tr> <td>corruption</td> <td>887</td> <td>6.7%</td> <td>23.0</td> <td>12.79sec</td> <td>11532</td> <td>10404</td> <td>21.4</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>138</td> <td>1928</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>curse_of_doom</td> <td>350</td> <td>2.6%</td> <td>4.5</td> <td>60.90sec</td> <td>23086</td> <td>20658</td> <td>39.9</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>4</td> <td>26034</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>immolate</td> <td>1130</td> <td>8.5%</td> <td>12.2</td> <td>24.77sec</td> <td>27725</td> <td>24329</td> <td>42.3</td> <td>2298</td> <td>4809</td> <td>6668</td> <td>56.6%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>96</td> <td>1894</td> <td>3957</td> <td>56.5%</td> <td>0.0%</td> </tr>
+ <tr> <td>immolation</td> <td>328</td> <td>2.5%</td> <td>3.0</td> <td>123.42sec</td> <td>32773</td> <td>29521</td> <td>13.3</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>45</td> <td>2185</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>incinerate</td> <td>1311</td> <td>9.9%</td> <td>29.0</td> <td>6.26sec</td> <td>13562</td> <td>10767</td> <td>25.2</td> <td>8180</td> <td>17092</td> <td>24747</td> <td>60.4%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>shadow_bolt</td> <td>3639</td> <td>27.5%</td> <td>74.0</td> <td>2.83sec</td> <td>14739</td> <td>8340</td> <td>22.5</td> <td>8852</td> <td>18484</td> <td>26866</td> <td>61.1%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>soul_fire</td> <td>3346</td> <td>25.2%</td> <td>46.8</td> <td>1.82sec</td> <td>21415</td> <td>14163</td> <td>61.7</td> <td>12197</td> <td>26106</td> <td>40530</td> <td>66.3%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <th>pet - felguard</th> <th>2261</th> </tr>
+ <tr> <td>cleave</td> <td>463</td> <td>3.5%</td> <td>50.5</td> <td>6.00sec</td> <td>2747</td> <td>1665</td> <td>8.2</td> <td>2090</td> <td>4187</td> <td>5067</td> <td>32.4%</td> <td>0.0%</td> <td>1.1%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>felguard_melee</td> <td>1798</td> <td>13.6%</td> <td>205.8</td> <td>1.45sec</td> <td>2618</td> <td>1801</td> <td>0.0</td> <td>2085</td> <td>4172</td> <td>5073</td> <td>32.6%</td> <td>0.0%</td> <td>1.1%</td> <td>0.0%</td> <td>24.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Dynamic Buffs</th> <th>Start</th> <th>Refresh</th> <th>Interval</th> <th>Trigger</th> <th>Up-Time</th> <th>Benefit</th> </tr>
+  <tr> <td>ashen_band_of_endless_destruction</td> <td>4.3</td> <td>0.0</td> <td>74.0sec</td> <td>74.0sec</td> <td>14%</td> <td>14%</td> </tr>
+  <tr> <td>bloodlust</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>13%</td> <td>13%</td> </tr>
+  <tr> <td>decimation</td> <td>1.0</td> <td>47.5</td> <td>0.0sec</td> <td>1.8sec</td> <td>29%</td> <td>100%</td> </tr>
+  <tr> <td>demonic_empowerment</td> <td>7.4</td> <td>0.0</td> <td>42.8sec</td> <td>42.8sec</td> <td>35%</td> <td>39%</td> </tr>
+  <tr> <td>demonic_frenzy</td> <td>1.0</td> <td>202.4</td> <td>0.0sec</td> <td>1.5sec</td> <td>99%</td> <td>99%</td> </tr>
+  <tr> <td>dislodged_foreign_object</td> <td>5.3</td> <td>0.0</td> <td>59.1sec</td> <td>59.1sec</td> <td>34%</td> <td>34%</td> </tr>
+  <tr> <td>life_tap_glyph</td> <td>5.3</td> <td>6.7</td> <td>65.6sec</td> <td>25.5sec</td> <td>99%</td> <td>97%</td> </tr>
+  <tr> <td>metamorphosis</td> <td>3.0</td> <td>0.0</td> <td>126.7sec</td> <td>0.0sec</td> <td>30%</td> <td>32%</td> </tr>
+  <tr> <td>molten_core</td> <td>13.2</td> <td>3.4</td> <td>21.5sec</td> <td>16.8sec</td> <td>25%</td> <td>78%</td> </tr>
+  <tr> <td>muradins_spyglass</td> <td>1.0</td> <td>443.6</td> <td>0.0sec</td> <td>0.7sec</td> <td>99%</td> <td>99%</td> </tr>
+  <tr> <td>tier10_4pc_caster</td> <td>9.1</td> <td>5.4</td> <td>31.4sec</td> <td>19.2sec</td> <td>40%</td> <td>40%</td> </tr>
+  <tr> <td>wild_magic_potion_crit</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+  <tr> <td>wild_magic_potion_sp</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Constant Buffs</th> </tr>
+  <tr> <td>arcane_brilliance</td> </tr>
+  <tr> <td>blessing_of_kings</td> </tr>
+  <tr> <td>blessing_of_might</td> </tr>
+  <tr> <td>blessing_of_wisdom</td> </tr>
+  <tr> <td>demonic_pact</td> </tr>
+  <tr> <td>divine_spirit</td> </tr>
+  <tr> <td>fel_armor</td> </tr>
+  <tr> <td>fortitude</td> </tr>
+  <tr> <td>mark_of_the_wild</td> </tr>
+  <tr> <td>replenishment</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Up-Times</th> <th>%</th> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Procs</th> <th>Count</th> <th>Interval</th> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>71.0</td> <td>4.2sec</td> </tr>
+  <tr> <td>life_tap</td> <td>12.0</td> <td>25.5sec</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Gains</th> <th>mana</th> <th>Overflow</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>6496.0</td> <td>0.7%</td> </tr>
+  <tr> <td>initial_mana</td> <td>32257.6</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>5477.5</td> <td>0.0%</td> </tr>
+  <tr> <td>life_tap</td> <td>54269.3</td> <td>7.7%</td> </tr>
+  <tr> <td>replenishment</td> <td>19189.1</td> <td>0.7%</td> </tr>
+  <tr> <td>spirit_intellect_regen</td> <td>5.7</td> <td>98.1%</td> </tr>
+  <tr> <th>pet - felguard</th> <th>mana</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>1129.9</td> <td>82.7%</td> </tr>
+  <tr> <td>initial_mana</td> <td>14401.0</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>3290.9</td> <td>50.0%</td> </tr>
+  <tr> <td>mp5_regen</td> <td>10474.4</td> <td>72.2%</td> </tr>
+  <tr> <td>replenishment</td> <td>1849.4</td> <td>78.6%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th></th> <th>Action Priority List</th> </tr>
+  <tr> <th>0</th> <td>flask,type=frost_wyrm</td> </tr>
+  <tr> <th>1</th> <td>food,type=fish_feast</td> </tr>
+  <tr> <th>2</th> <td>spell_stone</td> </tr>
+  <tr> <th>3</th> <td>fel_armor</td> </tr>
+  <tr> <th>4</th> <td>summon_pet,felguard</td> </tr>
+  <tr> <th>5</th> <td>snapshot_stats</td> </tr>
+  <tr> <th>6</th> <td>life_tap,buff_refresh=1</td> </tr>
+  <tr> <th>7</th> <td>shadow_bolt,isb_trigger=1</td> </tr>
+  <tr> <th>8</th> <td>wild_magic_potion,if=(buff.bloodlust.react)|(!in_combat)</td> </tr>
+  <tr> <th>9</th> <td>demonic_empowerment</td> </tr>
+  <tr> <th>10</th> <td>metamorphosis</td> </tr>
+  <tr> <th>11</th> <td>immolate,time_to_die>=4,if=(dot.immolate.remains<cast_time)</td> </tr>
+  <tr> <th>12</th> <td>immolation,if=(buff.tier10_4pc_caster.react)|(buff.metamorphosis.remains<15)</td> </tr>
+  <tr> <th>13</th> <td>curse_of_doom,time_to_die>=70</td> </tr>
+  <tr> <th>14</th> <td>soul_fire,if=(buff.decimation.react)&(buff.molten_core.react)</td> </tr>
+  <tr> <th>15</th> <td>corruption,time_to_die>=8,if=!ticking</td> </tr>
+  <tr> <th>16</th> <td>soul_fire,if=buff.decimation.react</td> </tr>
+  <tr> <th>17</th> <td>incinerate,if=buff.molten_core.react</td> </tr>
+  <tr> <th>18</th> <td>life_tap,trigger=12000,health_percentage>=35,if=buff.metamorphosis.down</td> </tr>
+  <tr> <th>19</th> <td>curse_of_agony,moving=1,if=(!ticking)&!(dot.curse_of_doom.remains>0)</td> </tr>
+  <tr> <th>20</th> <td>shadow_bolt</td> </tr>
+  <tr> <th>21</th> <td>life_tap</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Stat</th> <th>Raid-Buffed</th> <th>Un-Buffed</th> <th>Gear Amount</th> </tr>
+ <tr> <th>Strength</th>  <td>319</td> <td>68</td> <td>10</td> </tr>
+ <tr> <th>Agility</th>   <td>327</td> <td>75</td> <td>10</td> </tr>
+ <tr> <th>Stamina</th>   <td>2196</td> <td>1667</td> <td>1427</td> </tr>
+ <tr> <th>Intellect</th> <td>1857</td> <td>1584</td> <td>1427</td> </tr>
+ <tr> <th>Spirit</th>    <td>1009</td> <td>793</td> <td>622</td> </tr>
+ <tr> <th>Health</th>    <td>29092</td> <td>24148</td> <td>0</td> </tr>
+ <tr> <th>Mana</th>      <td>32258</td> <td>28040</td> <td>0</td> </tr>
+ <tr> <th>Spell Power</th>       <td>5202</td> <td>3469</td> <td>3469</td> </tr>
+ <tr> <th>Spell Hit</th>         <td>14.07%</td> <td>14.07%</td> <td>369</td> </tr>
+ <tr> <th>Spell Crit</th>        <td>48.00%</td> <td>41.36%</td> <td>925</td> </tr>
+ <tr> <th>Spell Haste</th>       <td>47.73%</td> <td>29.28%</td> <td>960</td> </tr>
+ <tr> <th>Spell Penetration</th> <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Mana Per 5</th>        <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Attack Power</th>      <td>1185</td> <td>58</td> <td>0</td> </tr>
+ <tr> <th>Melee Hit</th>         <td>11.25%</td> <td>11.25%</td> <td>369</td> </tr>
+ <tr> <th>Melee Crit</th>        <td>34.27%</td> <td>24.26%</td> <td>925</td> </tr>
+ <tr> <th>Melee Haste</th>       <td>68.84%</td> <td>29.28%</td> <td>960</td> </tr>
+ <tr> <th>Expertise</th>         <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor Penetration</th> <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor</th>       <td>4770</td> <td>2459</td> <td>2309</td> </tr>
+ <tr> <th>Block Value</th> <td>160</td> <td>34</td> <td>0</td> </tr>
+ <tr> <th>Defense</th>     <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Tank-Miss</th>   <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Dodge</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Parry</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Block</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Crit</th>   <td>13.90%</td> <td>13.90%</td> <td>0</td> </tr>
+</table> <br />
+<hr />
+<a name="Warlock_T10_00_13_58" /><h1>Warlock_T10_00_13_58&nbsp;:&nbsp;13524dps</h1>
+<style type="text/css">
+  table.player td, table.player th { padding: 4px; border: 1px inset; }
+  table.player { border: 1px outset; }</style>
+<table class="player">
+  <tr> <th>Name</th> <th>Race</th> <th>Class</th> <th>Tree</th> <th>Level</th> </tr>
+  <tr> <td>Warlock_T10_00_13_58</td> <td>undead</td> <td>warlock</td> <td>destruction</td> <td>80</td>
+</table><br />
+<table class="player">
+  <tr> <th>DPS</th> <th>Error</th> <th>Range</th> <th>DPR</th> <th>RPS-Out</th> <th>RPS-In</th> <th>Resource</th> <th>Waiting</th> <th>ApM</th> </tr>
+  <tr> <td>13524</td> <td>0.1%</td> <td>6.0%</td> <td>37.2</td> <td>363.9</td> <td>266.3</td> <td>mana</td> <td>0.0%</td> <td>47.1</td>
+</table><br />
+<table class="player">
+  <tr> <th>Origin</th> <td><a href="http://profiler.wowhead.com/profile=20850049">http://profiler.wowhead.com/profile=20850049</a></td>
+</table><br />
+<table class="player">
+  <tr> <th>Talents</th> <td><a href="http://www.wowarmory.com/talent-calc.xml?cid=9&tal=000000000000000000000000000003220030003000000000000000005203205210331051335230351">http://www.wowarmory.com/talent-calc.xml?cid=9&tal=000000000000000000000000000003220030003000000000000000005203205210331051335230351</a></td>
+</table><br />
+<table class="player"> <tr> <th>Glyphs</th> <td>conflagrate</td> <td>incinerate</td> <td>immolate</td> </tr> </table> <br />
+<table class="player">
+  <tr> <td><img name="chart_action_dpet" src="http://chart.apis.google.com/chart?chs=500x245&amp;cht=bhg&amp;chd=t:20695|18961|17507|12969|10505|1167&amp;chds=0,41391&amp;chco=C41F3B,C41F3B,9482C9,C41F3B,C41F3B,C41F3B&amp;chm=t++20695++immolate,C41F3B,0,0,15|t++18961++conflagrate,C41F3B,1,0,15|t++17507++curse_of_doom,9482C9,2,0,15|t++12969++chaos_bolt,C41F3B,3,0,15|t++10505++incinerate,C41F3B,4,0,15|t++1167++fire_bolt,C41F3B,5,0,15&amp;chtt=Warlock_t10_00_13_58|Damage+Per+Execute+Time&amp;chts=000000,20" />
+</td> <td><img name="chart_action_dmg" src="http://chart.apis.google.com/chart?chs=500x260&amp;cht=p&amp;chd=t:55,14,11,9,9,2&amp;chds=0,100&amp;chco=C41F3B,C41F3B,C41F3B,C41F3B,C41F3B,9482C9&amp;chl=incinerate|conflagrate|immolate|chaos_bolt|fire_bolt|curse_of_doom&amp;chtt=Warlock_T10_00_13_58+Damage+Sources&amp;chts=000000,20" />
+</td> </tr>
+  <tr> <td><img name="chart_gains" src="http://chart.apis.google.com/chart?chs=550x260&amp;cht=p&amp;chd=t:35,29,17,8,6,5&amp;chds=0,100&amp;chco=2459FF&amp;chl=soul_leech|initial_mana|replenishment|life_tap|blessing_of_wisdom|judgement_of_wisdom&amp;chtt=Warlock_t10_00_13_58+Resource+Gains&amp;chts=000000,20" />
+</td> <td><img name="chart_timeline_resource" src="http://chart.apis.google.com/chart?chs=425x150&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:A8765555554444333222222211110000zzzyyyyxxxxxxxwwvvvvvvvuututttttsrrrqqqqqppppppooonnnnmmmmmmmlllkkkjjjjjiiiiiihhhggggfffffffeeddccccbbbbbbaaaaZZZYYYYYXXXXXXWWWVVVVVVUUUTTTTTTSSSSRRRRQQQQQPPPOOONNNNNNMMMMMMLLLLKKKKKKKJJJJJJIIIIIIIIIIIIIHHHHHHHGGGGGGGGGGGGGFFGGGFGGFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEE&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|max=32258&amp;chtt=Warlock_t10_00_13_58+mana+Timeline&amp;chts=000000,20&amp;chco=2459FF" />
+</td> </tr>
+  <tr> <td><img name="chart_timeline_dps" src="http://chart.apis.google.com/chart?chs=425x130&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:psrusvvwuwxx0z23255334322322221z1zyyywwuvvuuwsvttuvtvywwuvvwwxyyyyzxzxwxxxvwxxwwwwxvwwvuvuvwvwvvvwvwwvuvvwxyzz0001454323234545444433210xxxzzzzyxxxxwwvvvvvvvuvuuvvvvvutuuvvvvwwxyyzyyxxxxxyyyyyyzzyywvuuvwxxxyyyyyyyxxxyyz000111111100z0012345556666555567777877755432112222222110zyyxxxxxxwwvvuttttsssssss&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|avg=13524|max=15958&amp;chxp=1,1,85,100&amp;chtt=Warlock_t10_00_13_58+DPS+Timeline&amp;chts=000000,20" />
+</td> <td><img name="chart_distribution_dps" src="http://chart.apis.google.com/chart?chs=525x130&amp;cht=bvs&amp;chf=c,ls,0,EEEEEE,0.125,FFFFFF,0.125&amp;chg=100,100&amp;chd=t:1,1,0,1,1,0,3,4,2,3,8,8,10,13,16,17,21,25,38,29,38,49,32,40,41,38,43,50,46,46,36,43,39,38,39,28,35,20,25,21,12,11,3,8,8,4,1,3,1,1&amp;chds=0,50&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=12638|avg=13524|max=14269&amp;chxp=0,1,54,100&amp;chtt=Warlock_t10_00_13_58+DPS+Distribution&amp;chts=000000,20" />
+</td> </tr>
+</tr></table> <br />
+<table class="player">
+ <tr> <th>Ability</th> <th>DPS</th> <th>DPS%</th> <th>Count</th> <th>Interval</th> <th>DPE</th> <th>DPET</th> <th>DPR</th> <th>Hit</th> <th>Crit</th> <th>Max</th> <th>Crit%</th> <th>M%</th> <th>D%</th> <th>P%</th> <th>G%</th> <th>Ticks</th> <th>T-Hit</th> <th>T-Crit</th> <th>T-Crit%</th> <th>T-M%</th> </tr>
+ <tr> <th>Warlock_T10_00_13_58</th> <th>13524</th> </tr>
+ <tr> <td>chaos_bolt</td> <td>1198</td> <td>8.9%</td> <td>21.6</td> <td>14.13sec</td> <td>16639</td> <td>12969</td> <td>68.8</td> <td>9588</td> <td>20026</td> <td>28978</td> <td>67.5%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>conflagrate</td> <td>1920</td> <td>14.2%</td> <td>27.9</td> <td>10.85sec</td> <td>20586</td> <td>18961</td> <td>37.1</td> <td>6472</td> <td>13522</td> <td>20327</td> <td>85.6%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>83</td> <td>1403</td> <td>2936</td> <td>85.5%</td> <td>0.0%</td> </tr>
+ <tr> <td>curse_of_doom</td> <td>279</td> <td>2.1%</td> <td>4.2</td> <td>61.40sec</td> <td>19733</td> <td>17507</td> <td>34.1</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>4</td> <td>20917</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>immolate</td> <td>1505</td> <td>11.1%</td> <td>19.1</td> <td>15.82sec</td> <td>23592</td> <td>20695</td> <td>40.1</td> <td>2574</td> <td>5388</td> <td>7606</td> <td>66.6%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>94</td> <td>2253</td> <td>4720</td> <td>66.2%</td> <td>0.0%</td> </tr>
+ <tr> <td>incinerate</td> <td>7457</td> <td>55.1%</td> <td>153.8</td> <td>1.92sec</td> <td>14528</td> <td>10505</td> <td>30.0</td> <td>8163</td> <td>17053</td> <td>25916</td> <td>71.6%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <th>pet - imp</th> <th>1167</th> </tr>
+ <tr> <td>fire_bolt</td> <td>1165</td> <td>8.6%</td> <td>161.3</td> <td>1.85sec</td> <td>2164</td> <td>1167</td> <td>12.0</td> <td>1778</td> <td>3554</td> <td>4890</td> <td>21.8%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Dynamic Buffs</th> <th>Start</th> <th>Refresh</th> <th>Interval</th> <th>Trigger</th> <th>Up-Time</th> <th>Benefit</th> </tr>
+  <tr> <td>ashen_band_of_endless_destruction</td> <td>4.5</td> <td>0.0</td> <td>71.9sec</td> <td>71.9sec</td> <td>15%</td> <td>15%</td> </tr>
+  <tr> <td>backdraft</td> <td>27.9</td> <td>0.0</td> <td>10.9sec</td> <td>10.9sec</td> <td>42%</td> <td>39%</td> </tr>
+  <tr> <td>bloodlust</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>13%</td> <td>13%</td> </tr>
+  <tr> <td>dislodged_foreign_object</td> <td>5.5</td> <td>0.0</td> <td>56.8sec</td> <td>56.8sec</td> <td>36%</td> <td>36%</td> </tr>
+  <tr> <td>empowered_imp</td> <td>34.8</td> <td>0.3</td> <td>8.4sec</td> <td>8.3sec</td> <td>9%</td> <td>16%</td> </tr>
+  <tr> <td>lightweave_embroidery</td> <td>5.0</td> <td>0.0</td> <td>63.0sec</td> <td>63.0sec</td> <td>25%</td> <td>25%</td> </tr>
+  <tr> <td>phylactery_of_the_nameless_lich</td> <td>3.0</td> <td>0.0</td> <td>104.8sec</td> <td>104.8sec</td> <td>20%</td> <td>20%</td> </tr>
+  <tr> <td>pyroclasm</td> <td>23.9</td> <td>0.0</td> <td>12.6sec</td> <td>12.6sec</td> <td>78%</td> <td>64%</td> </tr>
+  <tr> <td>tier10_4pc_caster</td> <td>9.2</td> <td>4.9</td> <td>31.3sec</td> <td>19.8sec</td> <td>39%</td> <td>39%</td> </tr>
+  <tr> <td>wild_magic_potion_crit</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+  <tr> <td>wild_magic_potion_sp</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Constant Buffs</th> </tr>
+  <tr> <td>arcane_brilliance</td> </tr>
+  <tr> <td>blessing_of_kings</td> </tr>
+  <tr> <td>blessing_of_might</td> </tr>
+  <tr> <td>blessing_of_wisdom</td> </tr>
+  <tr> <td>demonic_pact</td> </tr>
+  <tr> <td>divine_spirit</td> </tr>
+  <tr> <td>fel_armor</td> </tr>
+  <tr> <td>fortitude</td> </tr>
+  <tr> <td>mark_of_the_wild</td> </tr>
+  <tr> <td>replenishment</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Up-Times</th> <th>%</th> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Procs</th> <th>Count</th> <th>Interval</th> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>70.9</td> <td>4.2sec</td> </tr>
+  <tr> <td>life_tap</td> <td>2.0</td> <td>29.7sec</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Gains</th> <th>mana</th> <th>Overflow</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>6513.4</td> <td>0.4%</td> </tr>
+  <tr> <td>initial_mana</td> <td>32257.6</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>5471.6</td> <td>0.0%</td> </tr>
+  <tr> <td>life_tap</td> <td>9234.8</td> <td>0.0%</td> </tr>
+  <tr> <td>replenishment</td> <td>19242.2</td> <td>0.4%</td> </tr>
+  <tr> <td>soul_leech</td> <td>39336.7</td> <td>0.0%</td> </tr>
+  <tr> <th>pet - imp</th> <th>mana</th> </tr>
+  <tr> <td>initial_mana</td> <td>7424.6</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>1688.9</td> <td>0.0%</td> </tr>
+  <tr> <td>mp5_regen</td> <td>26013.1</td> <td>47.5%</td> </tr>
+  <tr> <td>replenishment</td> <td>1285.6</td> <td>71.1%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th></th> <th>Action Priority List</th> </tr>
+  <tr> <th>0</th> <td>flask,type=frost_wyrm</td> </tr>
+  <tr> <th>1</th> <td>food,type=fish_feast</td> </tr>
+  <tr> <th>2</th> <td>fire_stone</td> </tr>
+  <tr> <th>3</th> <td>fel_armor</td> </tr>
+  <tr> <th>4</th> <td>summon_pet,imp</td> </tr>
+  <tr> <th>5</th> <td>snapshot_stats</td> </tr>
+  <tr> <th>6</th> <td>wild_magic_potion,if=(buff.bloodlust.react)|(!in_combat)</td> </tr>
+  <tr> <th>7</th> <td>conflagrate</td> </tr>
+  <tr> <th>8</th> <td>immolate,time_to_die>=3,if=(dot.immolate.remains<cast_time)</td> </tr>
+  <tr> <th>9</th> <td>chaos_bolt</td> </tr>
+  <tr> <th>10</th> <td>curse_of_doom,time_to_die>=70</td> </tr>
+  <tr> <th>11</th> <td>curse_of_agony,moving=1,if=(!ticking)&!(dot.curse_of_doom.remains>0)</td> </tr>
+  <tr> <th>12</th> <td>incinerate</td> </tr>
+  <tr> <th>13</th> <td>life_tap</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Stat</th> <th>Raid-Buffed</th> <th>Un-Buffed</th> <th>Gear Amount</th> </tr>
+ <tr> <th>Strength</th>  <td>319</td> <td>68</td> <td>10</td> </tr>
+ <tr> <th>Agility</th>   <td>327</td> <td>75</td> <td>10</td> </tr>
+ <tr> <th>Stamina</th>   <td>2153</td> <td>1638</td> <td>1442</td> </tr>
+ <tr> <th>Intellect</th> <td>1857</td> <td>1584</td> <td>1427</td> </tr>
+ <tr> <th>Spirit</th>    <td>381</td> <td>222</td> <td>51</td> </tr>
+ <tr> <th>Health</th>    <td>28670</td> <td>23849</td> <td>0</td> </tr>
+ <tr> <th>Mana</th>      <td>32258</td> <td>28040</td> <td>0</td> </tr>
+ <tr> <th>Spell Power</th>       <td>4473</td> <td>3447</td> <td>3447</td> </tr>
+ <tr> <th>Spell Hit</th>         <td>14.07%</td> <td>14.07%</td> <td>369</td> </tr>
+ <tr> <th>Spell Crit</th>        <td>47.23%</td> <td>39.52%</td> <td>1162</td> </tr>
+ <tr> <th>Spell Haste</th>       <td>48.76%</td> <td>37.55%</td> <td>1231</td> </tr>
+ <tr> <th>Spell Penetration</th> <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Mana Per 5</th>        <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Attack Power</th>      <td>1185</td> <td>58</td> <td>0</td> </tr>
+ <tr> <th>Melee Hit</th>         <td>11.25%</td> <td>11.25%</td> <td>369</td> </tr>
+ <tr> <th>Melee Crit</th>        <td>39.44%</td> <td>29.42%</td> <td>1162</td> </tr>
+ <tr> <th>Melee Haste</th>       <td>70.01%</td> <td>37.55%</td> <td>1231</td> </tr>
+ <tr> <th>Expertise</th>         <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor Penetration</th> <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor</th>       <td>4770</td> <td>2459</td> <td>2309</td> </tr>
+ <tr> <th>Block Value</th> <td>160</td> <td>34</td> <td>0</td> </tr>
+ <tr> <th>Defense</th>     <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Tank-Miss</th>   <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Dodge</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Parry</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Block</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Crit</th>   <td>13.90%</td> <td>13.90%</td> <td>0</td> </tr>
+</table> <br />
+<hr />
+<a name="Warlock_T10_00_18_53" /><h1>Warlock_T10_00_18_53&nbsp;:&nbsp;13356dps</h1>
+<style type="text/css">
+  table.player td, table.player th { padding: 4px; border: 1px inset; }
+  table.player { border: 1px outset; }</style>
+<table class="player">
+  <tr> <th>Name</th> <th>Race</th> <th>Class</th> <th>Tree</th> <th>Level</th> </tr>
+  <tr> <td>Warlock_T10_00_18_53</td> <td>undead</td> <td>warlock</td> <td>destruction</td> <td>80</td>
+</table><br />
+<table class="player">
+  <tr> <th>DPS</th> <th>Error</th> <th>Range</th> <th>DPR</th> <th>RPS-Out</th> <th>RPS-In</th> <th>Resource</th> <th>Waiting</th> <th>ApM</th> </tr>
+  <tr> <td>13356</td> <td>0.1%</td> <td>5.9%</td> <td>37.8</td> <td>353.6</td> <td>255.7</td> <td>mana</td> <td>0.0%</td> <td>47.5</td>
+</table><br />
+<table class="player">
+  <tr> <th>Origin</th> <td><a href="http://profiler.wowhead.com/profile=20983226">http://profiler.wowhead.com/profile=20983226</a></td>
+</table><br />
+<table class="player">
+  <tr> <th>Talents</th> <td><a href="http://www.wowarmory.com/talent-calc.xml?cid=9&tal=000000000000000000000000000003220030113300000000000000005203205210331051035030351">http://www.wowarmory.com/talent-calc.xml?cid=9&tal=000000000000000000000000000003220030113300000000000000005203205210331051035030351</a></td>
+</table><br />
+<table class="player"> <tr> <th>Glyphs</th> <td>conflagrate</td> <td>incinerate</td> <td>immolate</td> </tr> </table> <br />
+<table class="player">
+  <tr> <td><img name="chart_action_dpet" src="http://chart.apis.google.com/chart?chs=500x245&amp;cht=bhg&amp;chd=t:20640|18886|17888|12983|10530|1308&amp;chds=0,41280&amp;chco=C41F3B,C41F3B,9482C9,C41F3B,C41F3B,C41F3B&amp;chm=t++20640++immolate,C41F3B,0,0,15|t++18886++conflagrate,C41F3B,1,0,15|t++17888++curse_of_doom,9482C9,2,0,15|t++12983++chaos_bolt,C41F3B,3,0,15|t++10530++incinerate,C41F3B,4,0,15|t++1308++fire_bolt,C41F3B,5,0,15&amp;chtt=Warlock_t10_00_18_53|Damage+Per+Execute+Time&amp;chts=000000,20" />
+</td> <td><img name="chart_action_dmg" src="http://chart.apis.google.com/chart?chs=500x260&amp;cht=p&amp;chd=t:54,14,11,10,9,2&amp;chds=0,100&amp;chco=C41F3B,C41F3B,C41F3B,C41F3B,C41F3B,9482C9&amp;chl=incinerate|conflagrate|immolate|fire_bolt|chaos_bolt|curse_of_doom&amp;chtt=Warlock_T10_00_18_53+Damage+Sources&amp;chts=000000,20" />
+</td> </tr>
+  <tr> <td><img name="chart_gains" src="http://chart.apis.google.com/chart?chs=550x250&amp;cht=p&amp;chd=t:42,30,18,6,5&amp;chds=0,100&amp;chco=2459FF&amp;chl=life_tap|initial_mana|replenishment|blessing_of_wisdom|judgement_of_wisdom&amp;chtt=Warlock_t10_00_18_53+Resource+Gains&amp;chts=000000,20" />
+</td> <td><img name="chart_timeline_resource" src="http://chart.apis.google.com/chart?chs=425x150&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:A875554433222100zzyyyxxxwvvuutttsssqqppoonnnmmllkkjjjiihhggffeeedcbbaaZZZYYYXXWWVVUUTTSSRRRQQPPONNNMMLLKKJJJIIHGGGFFEEDDDCCDEGIIIHHHGGFFEEEDDCCDEFGHHHHGGFFFEEDDCCDEFHHHHHGGFFEEDDCCDDEGGHHHGGFFEEDDDDDDFGGHHHHGGFFEEDDDDDEEFGHIIHHGGGFFEEEDDDDEFGHHHHGGFFEEDDDDEFGHHHHGGFFEDDDDDEFGHHHGGFFEEDDDDDEFGGGGGFE&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|max=32258&amp;chtt=Warlock_t10_00_18_53+mana+Timeline&amp;chts=000000,20&amp;chco=2459FF" />
+</td> </tr>
+  <tr> <td><img name="chart_timeline_dps" src="http://chart.apis.google.com/chart?chs=425x130&amp;cht=lc&amp;chf=c,ls,0,EEEEEE,0.2,FFFFFF,0.2&amp;chg=100,20&amp;chd=s:qsrvtvwxvxxy1033366434323323232010yzzxxvwwvvwtwuuvwuwyxwuwwxxyyzzz0y0ywyyywxxyxxxxywxxwvwvwxwxwwwxwxxvvwwwyz0001124432111233232222111zyvuvwxyxxxwwvvvuuutttuuuuuuuuutttttttuttuuvwyxxwvvvwwxxxxwxxxwwvutuuvwwxxxxxxxwwwxxyz000000000zzyyz011223455655554556777877765421111111111100zyyxwwwwvvvvutttssrrrrrr&amp;chds=0,60&amp;chxt=x,y&amp;chxl=0:|0|sec=299|1:|0|avg=13356|max=15856&amp;chxp=1,1,84,100&amp;chtt=Warlock_t10_00_18_53+DPS+Timeline&amp;chts=000000,20" />
+</td> <td><img name="chart_distribution_dps" src="http://chart.apis.google.com/chart?chs=525x130&amp;cht=bvs&amp;chf=c,ls,0,EEEEEE,0.125,FFFFFF,0.125&amp;chg=100,100&amp;chd=t:1,0,0,0,2,2,3,5,10,8,7,15,21,24,23,30,34,28,45,39,46,40,50,57,43,50,45,39,43,33,28,39,24,33,29,16,17,10,22,8,5,5,5,2,4,4,2,3,0,1&amp;chds=0,57&amp;chbh=5&amp;chxt=x&amp;chxl=0:|min=12580|avg=13356|max=14157&amp;chxp=0,1,49,100&amp;chtt=Warlock_t10_00_18_53+DPS+Distribution&amp;chts=000000,20" />
+</td> </tr>
+</tr></table> <br />
+<table class="player">
+ <tr> <th>Ability</th> <th>DPS</th> <th>DPS%</th> <th>Count</th> <th>Interval</th> <th>DPE</th> <th>DPET</th> <th>DPR</th> <th>Hit</th> <th>Crit</th> <th>Max</th> <th>Crit%</th> <th>M%</th> <th>D%</th> <th>P%</th> <th>G%</th> <th>Ticks</th> <th>T-Hit</th> <th>T-Crit</th> <th>T-Crit%</th> <th>T-M%</th> </tr>
+ <tr> <th>Warlock_T10_00_18_53</th> <th>13356</th> </tr>
+ <tr> <td>chaos_bolt</td> <td>1194</td> <td>8.9%</td> <td>21.5</td> <td>14.17sec</td> <td>16621</td> <td>12983</td> <td>68.7</td> <td>9576</td> <td>19968</td> <td>28848</td> <td>67.8%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>conflagrate</td> <td>1898</td> <td>14.2%</td> <td>27.6</td> <td>10.97sec</td> <td>20583</td> <td>18886</td> <td>37.1</td> <td>6494</td> <td>13512</td> <td>20399</td> <td>85.4%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>82</td> <td>1406</td> <td>2935</td> <td>85.7%</td> <td>0.0%</td> </tr>
+ <tr> <td>curse_of_doom</td> <td>278</td> <td>2.1%</td> <td>4.1</td> <td>61.80sec</td> <td>20266</td> <td>17888</td> <td>35.1</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>4</td> <td>20833</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <td>immolate</td> <td>1501</td> <td>11.2%</td> <td>19.1</td> <td>15.85sec</td> <td>23513</td> <td>20640</td> <td>39.9</td> <td>2566</td> <td>5377</td> <td>7540</td> <td>66.1%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>94</td> <td>2248</td> <td>4708</td> <td>66.5%</td> <td>0.0%</td> </tr>
+ <tr> <td>incinerate</td> <td>7180</td> <td>53.8%</td> <td>148.0</td> <td>1.99sec</td> <td>14536</td> <td>10530</td> <td>30.0</td> <td>8162</td> <td>17052</td> <td>26065</td> <td>71.7%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+ <tr> <th>pet - imp</th> <th>1308</th> </tr>
+ <tr> <td>fire_bolt</td> <td>1305</td> <td>9.8%</td> <td>161.3</td> <td>1.85sec</td> <td>2425</td> <td>1308</td> <td>13.5</td> <td>1991</td> <td>3986</td> <td>5496</td> <td>21.7%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0.0%</td> <td>0</td> <td>0</td> <td>0</td> <td>0.0%</td> <td>0.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Dynamic Buffs</th> <th>Start</th> <th>Refresh</th> <th>Interval</th> <th>Trigger</th> <th>Up-Time</th> <th>Benefit</th> </tr>
+  <tr> <td>ashen_band_of_endless_destruction</td> <td>4.5</td> <td>0.0</td> <td>72.1sec</td> <td>72.1sec</td> <td>15%</td> <td>15%</td> </tr>
+  <tr> <td>backdraft</td> <td>27.6</td> <td>0.0</td> <td>11.0sec</td> <td>11.0sec</td> <td>43%</td> <td>40%</td> </tr>
+  <tr> <td>bloodlust</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>13%</td> <td>13%</td> </tr>
+  <tr> <td>dislodged_foreign_object</td> <td>5.5</td> <td>0.0</td> <td>57.3sec</td> <td>57.3sec</td> <td>35%</td> <td>35%</td> </tr>
+  <tr> <td>empowered_imp</td> <td>34.7</td> <td>0.4</td> <td>8.4sec</td> <td>8.3sec</td> <td>10%</td> <td>16%</td> </tr>
+  <tr> <td>lightweave_embroidery</td> <td>5.0</td> <td>0.0</td> <td>63.2sec</td> <td>63.2sec</td> <td>25%</td> <td>25%</td> </tr>
+  <tr> <td>phylactery_of_the_nameless_lich</td> <td>3.0</td> <td>0.0</td> <td>104.6sec</td> <td>104.6sec</td> <td>20%</td> <td>20%</td> </tr>
+  <tr> <td>pyroclasm</td> <td>23.6</td> <td>0.0</td> <td>12.8sec</td> <td>12.8sec</td> <td>77%</td> <td>63%</td> </tr>
+  <tr> <td>tier10_4pc_caster</td> <td>9.2</td> <td>5.1</td> <td>31.2sec</td> <td>19.5sec</td> <td>40%</td> <td>40%</td> </tr>
+  <tr> <td>wild_magic_potion_crit</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+  <tr> <td>wild_magic_potion_sp</td> <td>1.0</td> <td>0.0</td> <td>0.0sec</td> <td>0.0sec</td> <td>5%</td> <td>5%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Constant Buffs</th> </tr>
+  <tr> <td>arcane_brilliance</td> </tr>
+  <tr> <td>blessing_of_kings</td> </tr>
+  <tr> <td>blessing_of_might</td> </tr>
+  <tr> <td>blessing_of_wisdom</td> </tr>
+  <tr> <td>demonic_pact</td> </tr>
+  <tr> <td>divine_spirit</td> </tr>
+  <tr> <td>fel_armor</td> </tr>
+  <tr> <td>fortitude</td> </tr>
+  <tr> <td>mark_of_the_wild</td> </tr>
+  <tr> <td>replenishment</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Up-Times</th> <th>%</th> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Procs</th> <th>Count</th> <th>Interval</th> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>69.4</td> <td>4.3sec</td> </tr>
+  <tr> <td>life_tap</td> <td>10.0</td> <td>18.5sec</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Gains</th> <th>mana</th> <th>Overflow</th> </tr>
+  <tr> <td>blessing_of_wisdom</td> <td>6517.8</td> <td>0.3%</td> </tr>
+  <tr> <td>initial_mana</td> <td>32257.6</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>5354.8</td> <td>0.0%</td> </tr>
+  <tr> <td>life_tap</td> <td>45495.4</td> <td>0.0%</td> </tr>
+  <tr> <td>replenishment</td> <td>19253.6</td> <td>0.3%</td> </tr>
+  <tr> <th>pet - imp</th> <th>mana</th> </tr>
+  <tr> <td>initial_mana</td> <td>7424.6</td> <td>0.0%</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> <td>1685.7</td> <td>0.0%</td> </tr>
+  <tr> <td>mp5_regen</td> <td>26016.2</td> <td>47.5%</td> </tr>
+  <tr> <td>replenishment</td> <td>1287.7</td> <td>71.0%</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th></th> <th>Action Priority List</th> </tr>
+  <tr> <th>0</th> <td>flask,type=frost_wyrm</td> </tr>
+  <tr> <th>1</th> <td>food,type=fish_feast</td> </tr>
+  <tr> <th>2</th> <td>fire_stone</td> </tr>
+  <tr> <th>3</th> <td>fel_armor</td> </tr>
+  <tr> <th>4</th> <td>summon_pet,imp</td> </tr>
+  <tr> <th>5</th> <td>snapshot_stats</td> </tr>
+  <tr> <th>6</th> <td>wild_magic_potion,if=(buff.bloodlust.react)|(!in_combat)</td> </tr>
+  <tr> <th>7</th> <td>conflagrate</td> </tr>
+  <tr> <th>8</th> <td>immolate,time_to_die>=3,if=(dot.immolate.remains<cast_time)</td> </tr>
+  <tr> <th>9</th> <td>chaos_bolt</td> </tr>
+  <tr> <th>10</th> <td>curse_of_doom,time_to_die>=70</td> </tr>
+  <tr> <th>11</th> <td>curse_of_agony,moving=1,if=(!ticking)&!(dot.curse_of_doom.remains>0)</td> </tr>
+  <tr> <th>12</th> <td>incinerate</td> </tr>
+  <tr> <th>13</th> <td>life_tap</td> </tr>
+</table> <br />
+<table class="player">
+  <tr> <th>Stat</th> <th>Raid-Buffed</th> <th>Un-Buffed</th> <th>Gear Amount</th> </tr>
+ <tr> <th>Strength</th>  <td>319</td> <td>68</td> <td>10</td> </tr>
+ <tr> <th>Agility</th>   <td>327</td> <td>75</td> <td>10</td> </tr>
+ <tr> <th>Stamina</th>   <td>2153</td> <td>1638</td> <td>1442</td> </tr>
+ <tr> <th>Intellect</th> <td>1857</td> <td>1584</td> <td>1427</td> </tr>
+ <tr> <th>Spirit</th>    <td>381</td> <td>222</td> <td>51</td> </tr>
+ <tr> <th>Health</th>    <td>28670</td> <td>23849</td> <td>0</td> </tr>
+ <tr> <th>Mana</th>      <td>32258</td> <td>28040</td> <td>0</td> </tr>
+ <tr> <th>Spell Power</th>       <td>4473</td> <td>3447</td> <td>3447</td> </tr>
+ <tr> <th>Spell Hit</th>         <td>14.07%</td> <td>14.07%</td> <td>369</td> </tr>
+ <tr> <th>Spell Crit</th>        <td>47.23%</td> <td>39.52%</td> <td>1162</td> </tr>
+ <tr> <th>Spell Haste</th>       <td>48.76%</td> <td>37.55%</td> <td>1231</td> </tr>
+ <tr> <th>Spell Penetration</th> <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Mana Per 5</th>        <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Attack Power</th>      <td>1185</td> <td>58</td> <td>0</td> </tr>
+ <tr> <th>Melee Hit</th>         <td>11.25%</td> <td>11.25%</td> <td>369</td> </tr>
+ <tr> <th>Melee Crit</th>        <td>39.44%</td> <td>29.42%</td> <td>1162</td> </tr>
+ <tr> <th>Melee Haste</th>       <td>70.01%</td> <td>37.55%</td> <td>1231</td> </tr>
+ <tr> <th>Expertise</th>         <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor Penetration</th> <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Armor</th>       <td>4770</td> <td>2459</td> <td>2309</td> </tr>
+ <tr> <th>Block Value</th> <td>160</td> <td>34</td> <td>0</td> </tr>
+ <tr> <th>Defense</th>     <td>0</td> <td>0</td> <td>0</td> </tr>
+ <tr> <th>Tank-Miss</th>   <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Dodge</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Parry</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Block</th>  <td>0.00%</td> <td>0.00%</td> <td>0</td> </tr>
+ <tr> <th>Tank-Crit</th>   <td>13.90%</td> <td>13.90%</td> <td>0</td> </tr>
+</table> <br />
+<hr />
+<a name="auras_debuffs" /><h1>Auras and Debuffs</h1>
+<style type="text/css">
+  table.auras td, table.auras th { padding: 4px; border: 1px inset; }
+  table.charts { border: 1px outset; }</style>
+<table class="auras">
+  <tr> <th>Dynamic</th> <th>Start</th> <th>Refresh</th> <th>Interval</th> <th>Trigger</th> <th>Up-Time</th> <th>Benefit</th> </tr>
+</table> <br />
+<table class="auras">
+  <tr> <th>Constant</th> </tr>
+  <tr> <td>abominations_might</td> </tr>
+  <tr> <td>arcane_empowerment</td> </tr>
+  <tr> <td>battle_shout</td> </tr>
+  <tr> <td>bleeding</td> </tr>
+  <tr> <td>blood_frenzy</td> </tr>
+  <tr> <td>blood_plague</td> </tr>
+  <tr> <td>crypt_fever</td> </tr>
+  <tr> <td>curse_of_elements</td> </tr>
+  <tr> <td>devotion_aura</td> </tr>
+  <tr> <td>earth_and_moon</td> </tr>
+  <tr> <td>ebon_plaguebringer</td> </tr>
+  <tr> <td>elemental_oath</td> </tr>
+  <tr> <td>expose_armor</td> </tr>
+  <tr> <td>faerie_fire</td> </tr>
+  <tr> <td>ferocious_inspiration</td> </tr>
+  <tr> <td>flametongue_totem</td> </tr>
+  <tr> <td>frost_fever</td> </tr>
+  <tr> <td>heart_of_the_crusader</td> </tr>
+  <tr> <td>horn_of_winter</td> </tr>
+  <tr> <td>hunters_mark</td> </tr>
+  <tr> <td>improved_faerie_fire</td> </tr>
+  <tr> <td>improved_icy_talons</td> </tr>
+  <tr> <td>improved_moonkin</td> </tr>
+  <tr> <td>improved_scorch</td> </tr>
+  <tr> <td>improved_shadow_bolt</td> </tr>
+  <tr> <td>infected_wounds</td> </tr>
+  <tr> <td>insect_swarm</td> </tr>
+  <tr> <td>judgement_of_wisdom</td> </tr>
+  <tr> <td>judgements_of_the_just</td> </tr>
+  <tr> <td>leader_of_the_pack</td> </tr>
+  <tr> <td>mana_spring_totem</td> </tr>
+  <tr> <td>mangle</td> </tr>
+  <tr> <td>master_poisoner</td> </tr>
+  <tr> <td>misery</td> </tr>
+  <tr> <td>moonkin</td> </tr>
+  <tr> <td>poisoned</td> </tr>
+  <tr> <td>rampage</td> </tr>
+  <tr> <td>sanctified_retribution</td> </tr>
+  <tr> <td>savage_combat</td> </tr>
+  <tr> <td>strength_of_earth</td> </tr>
+  <tr> <td>sunder_armor</td> </tr>
+  <tr> <td>swift_retribution</td> </tr>
+  <tr> <td>thunder_clap</td> </tr>
+  <tr> <td>totem_of_wrath</td> </tr>
+  <tr> <td>totem_of_wrath_debuff</td> </tr>
+  <tr> <td>trauma</td> </tr>
+  <tr> <td>trueshot</td> </tr>
+  <tr> <td>unleashed_rage</td> </tr>
+  <tr> <td>windfury_totem</td> </tr>
+  <tr> <td>winters_chill</td> </tr>
+  <tr> <td>wrath_of_air</td> </tr>
+</table> <br />
+</body>
+</html>
