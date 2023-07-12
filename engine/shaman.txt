@@ -1,0 +1,201 @@
+
+SimulationCraft for World of Warcraft release 3.3.3 ( iterations=1000, max_time=300, vary_combat_length=0.000, optimal_raid=1, smooth_rng=0 )
+
+Generating baseline... 
+10... 9... 8... 7... 6... 5... 4... 3... 2... 1... 
+
+Generating reports...
+
+DPS Ranking:
+  35554 100.0%  Raid
+  12200  34.3%  Shaman_T10_19_52_00
+  12155  34.1%  Shaman_T10_57_14_00
+  11237  31.6%  Shaman_T10_57_14_00_ToW
+
+Player: Shaman_T10_57_14_00 tauren shaman elemental 80
+  DPS: 12154.9  Error=16.5  Range=809  DPR=63.6  RPS=191.0/180.4  (mana)
+  Origin: http://profiler.wowhead.com/profile=20837754
+  Core Stats:  strength=393|135(10)  agility=332|80(10)  stamina=2068|1582(1445)  intellect=2000|1703(1425)  spirit=307|155(10)  health=27368|22948  mana=34116|29661
+  Spell Stats:  power=4142|3417(3417)  hit=10.94%|10.94%(287)  crit=50.02%|43.24%(1185)  penetration=0|0(0)  haste=49.88%|38.58%(1265)  mp5=250|214(10)
+  Attack Stats  power=1796|355(0)  hit=8.75%|8.75%(287)  crit=42.72%|34.70%(1185)  expertise=0.00|0.00(0)  penetration=0.00%|0.00%(0)  haste=85.59%|50.16%(1265)
+  Defense Stats:  armor=18468|16157(15997)  blockv=456|326(259)  defense=0|0(0)  miss=0.00%|0.00%  dodge=0.00%|0.00%(0)  parry=0.00%|0.00%(0)  block=0.00%|0.00%(0) crit=13.90%|13.90%
+  Glyphs: flametongue_weapon/lava/lightning_bolt
+  Priorities:
+    flask,type=frost_wyrm/food,type=fish_feast/flametongue_weapon,weapon=main
+    water_shield/mana_spring_totem/wrath_of_air_totem/snapshot_stats/wind_shear
+    bloodlust,time_to_die<=59/wild_magic_potion,if=buff.bloodlust.react
+    elemental_mastery,time_to_die<=17/elemental_mastery,if=!buff.bloodlust.react
+    flame_shock,if=!ticking/lava_burst,if=(dot.flame_shock.remains-cast_time)>=0
+    fire_elemental_totem/searing_totem/fire_nova,if=target.adds>3
+    chain_lightning,if=target.adds>1/fire_nova,if=target.adds>2/lightning_bolt
+    fire_nova,moving=1/thunderstorm
+  Actions:
+    flame_shock         Count= 16.1|19.27sec  DPE= 22399|10%  DPET= 20565  DPR= 182.3  pDPS=1200  Miss=0.07%  Hit=2216|1898|2910  Crit= 4639| 3966| 5947|59.3%  TickCount=153  MissTick=0.0%  Tick=1184|999|1605  CritTick=2476|2087|3355|60.2%
+    lava_burst          Count= 30.4| 9.98sec  DPE= 16644|14%  DPET= 14673  DPR=  63.5  pDPS=1688  Miss=0.07%  Hit=6909|6909|6909  Crit=16657|13948|22319|99.9%
+    lightning_bolt      Count=182.3| 1.63sec  DPE= 11267|56%  DPET=  8446  DPR=  44.6  pDPS=6853  Miss=0.05%  Hit=6576|5429|9032  Crit=13779|11346|18878|65.2%
+    lightning_overload  Count= 60.0| 0.00sec  DPE=  6691|11%  DPET=   inf  DPR=   0.0  pDPS=1338  Miss=0.05%  Hit=3900|3208|5394  Crit= 8185| 6705|11274|65.2%
+    searing_totem       Count=  3.1|60.76sec  DPE= 44437| 4%  DPET= 41168  DPR= 224.6  pDPS= 463  Miss=0.03%  TickCount=70  MissTick=0.1%  Tick=1206|1001|1643  CritTick=2524|2092|3435|59.7%
+   fire_elemental  (DPS=1503.2)
+    fire_blast          Count= 20.0| 6.00sec  DPE=  1896| 1%  DPET=   inf  DPR=   6.9  pDPS= 126  Miss=3.83%  Hit=1849|1703|2245  Crit= 2777| 2555| 3368|12.7%
+    fire_melee          Count= 19.0| 6.00sec  DPE=  3422| 2%  DPET=  1711  DPR=   0.0  pDPS= 217  Miss=0.00%  Hit=3534|3131|4757  Crit= 7027| 6262| 9515|3.0%  Glance=2654|24.4%
+    fire_nova           Count= 20.0| 6.00sec  DPE=  3688| 2%  DPET=  1475  DPR=  17.8  pDPS= 246  Miss=4.01%  Hit=3607|3241|4596  Crit= 5390| 4861| 6894|12.7%
+    fire_shield         Count= 41.0| 3.00sec  DPE=   174| 0%  DPET=    58  DPR=   0.0  pDPS=  24  Miss=4.00%  Hit= 178| 168| 209  Crit=  268|  252|  313|11.9%
+  Constant Buffs: arcane_brilliance/blessing_of_kings/blessing_of_might/blessing_of_wisdom/divine_spirit/fortitude
+  Constant Buffs: mark_of_the_wild/replenishment/water_shield
+  Dynamic Buffs:
+    ashen_band_of_endless_destruction : start=4.5   refresh=0.0    interval= 71.8|71.8   uptime=15%  trigger=10%
+    bloodlust                         : start=1.0   refresh=0.0    interval=  0.0|0.0    uptime=13%
+    charred_twilight_scale            : start=6.3   refresh=0.0    interval= 50.5|50.5   uptime=30%  trigger=10%
+    elemental_focus                   : start=51.7  refresh=107.0  interval=  5.8|1.9    uptime=90%  benefit=89%
+    elemental_mastery                 : start=5.0   refresh=0.0    interval= 69.7|69.7   uptime=25%  benefit=28%
+    phylactery_of_the_nameless_lich   : start=3.0   refresh=0.0    interval=104.4|104.4  uptime=20%  trigger=31%
+    wild_magic_potion_crit            : start=1.0   refresh=0.0    interval=  0.0|0.0    uptime= 5%
+    wild_magic_potion_sp              : start=1.0   refresh=0.0    interval=  0.0|0.0    uptime= 5%
+  Procs:
+     70.0 |   4.24sec : judgement_of_wisdom
+     60.0 |   4.91sec : lightning_overload
+  Gains:
+     6540.6 : blessing_of_wisdom 
+    34116.0 : initial_mana       
+     6150.9 : judgement_of_wisdom
+    14975.4 : mp5_regen          
+    20435.0 : replenishment      
+     5989.0 : water_shield       
+  Pet "fire_elemental" Gains:
+    13000.0 : initial_mana       
+     1331.4 : judgement_of_wisdom
+
+Player: Shaman_T10_57_14_00_ToW tauren shaman elemental 80
+  DPS: 11237.3  Error=16.5  Range=794  DPR=57.7  RPS=194.7/180.7  (mana)
+  Origin: http://profiler.wowhead.com/profile=20837752
+  Core Stats:  strength=393|135(10)  agility=332|80(10)  stamina=2068|1582(1445)  intellect=2000|1703(1425)  spirit=307|155(10)  health=27368|22948  mana=34116|29661
+  Spell Stats:  power=4226|3417(3417)  hit=10.94%|10.94%(287)  crit=50.02%|43.24%(1185)  penetration=0|0(0)  haste=49.88%|38.58%(1265)  mp5=250|214(10)
+  Attack Stats  power=1796|355(0)  hit=8.75%|8.75%(287)  crit=42.72%|34.70%(1185)  expertise=0.00|0.00(0)  penetration=0.00%|0.00%(0)  haste=85.59%|50.16%(1265)
+  Defense Stats:  armor=18468|16157(15997)  blockv=456|326(259)  defense=0|0(0)  miss=0.00%|0.00%  dodge=0.00%|0.00%(0)  parry=0.00%|0.00%(0)  block=0.00%|0.00%(0) crit=13.90%|13.90%
+  Glyphs: flame_shock/totem_of_wrath/lightning_bolt
+  Priorities:
+    flask,type=frost_wyrm/food,type=fish_feast/flametongue_weapon,weapon=main
+    water_shield/mana_spring_totem/wrath_of_air_totem/totem_of_wrath/snapshot_stats
+    wind_shear/bloodlust,time_to_die<=59/wild_magic_potion,if=buff.bloodlust.react
+    elemental_mastery,time_to_die<=17/elemental_mastery,if=!buff.bloodlust.react
+    flame_shock,if=!ticking/lava_burst,if=(dot.flame_shock.remains-cast_time)>=0
+    fire_nova,if=target.adds>3/chain_lightning,if=target.adds>1
+    fire_nova,if=target.adds>2/lightning_bolt/fire_nova,moving=1/thunderstorm
+  Actions:
+    flame_shock         Count= 16.6|18.53sec  DPE= 24828|12%  DPET= 22719  DPR= 199.2  pDPS=1379  Miss=0.05%  Hit=2255|1922|2937  Crit= 5474| 4646| 7099|58.3%  TickCount=156  MissTick=0.0%  Tick=1207|1014|1622  CritTick=2925|2450|3920|58.0%
+    lava_burst          Count= 30.3| 9.97sec  DPE= 15379|14%  DPET= 13565  DPR=  58.2  pDPS=1554  Miss=0.09%  Crit=15392|12831|20538|99.9%
+    lightning_bolt      Count=184.2| 1.61sec  DPE= 11300|62%  DPET=  8474  DPR=  44.6  pDPS=6945  Miss=0.06%  Hit=6666|5429|9133  Crit=13996|11346|19088|63.3%
+    lightning_overload  Count= 60.8| 0.00sec  DPE=  6694|12%  DPET=   inf  DPR=   0.0  pDPS=1358  Miss=0.05%  Hit=3966|3208|5456  Crit= 8302| 6705|11402|63.0%
+  Constant Buffs: arcane_brilliance/blessing_of_kings/blessing_of_might/blessing_of_wisdom/divine_spirit/fortitude
+  Constant Buffs: mark_of_the_wild/replenishment/totem_of_wrath_glyph/water_shield
+  Dynamic Buffs:
+    ashen_band_of_endless_destruction : start=4.6   refresh=0.0    interval= 71.2|71.2   uptime=15%  trigger=10%
+    bloodlust                         : start=1.0   refresh=0.0    interval=  0.0|0.0    uptime=13%
+    charred_twilight_scale            : start=6.1   refresh=0.0    interval= 51.5|51.5   uptime=30%  trigger=10%
+    elemental_focus                   : start=51.7  refresh=104.8  interval=  5.8|1.9    uptime=89%  benefit=89%
+    elemental_mastery                 : start=5.0   refresh=0.0    interval= 69.2|69.2   uptime=25%  benefit=28%
+    phylactery_of_the_nameless_lich   : start=3.0   refresh=0.0    interval=105.8|105.8  uptime=20%  trigger=30%
+    wild_magic_potion_crit            : start=1.0   refresh=0.0    interval=  0.0|0.0    uptime= 5%
+    wild_magic_potion_sp              : start=1.0   refresh=0.0    interval=  0.0|0.0    uptime= 5%
+  Procs:
+     70.6 |   4.19sec : judgement_of_wisdom
+     60.8 |   4.83sec : lightning_overload
+  Gains:
+     6541.3 : blessing_of_wisdom 
+    34116.0 : initial_mana       
+     6202.8 : judgement_of_wisdom
+    14975.6 : mp5_regen          
+    20436.2 : replenishment      
+     5990.2 : water_shield       
+
+Player: Shaman_T10_19_52_00 tauren shaman enhancement 80
+  DPS: 12200.2  Error=18.6  Range=835  DPR=31.6  RPS=386.0/366.7  (mana)
+  Origin: http://profiler.wowhead.com/profile=20837779
+  Core Stats:  strength=404|145(20)  agility=2305|1873(1803)  stamina=2197|1699(1562)  intellect=938|744(592)  spirit=318|165(20)  health=28658|24118  mana=18186|15276
+  Spell Stats:  power=2979|1612(0)  hit=16.16%|16.16%(424)  crit=40.64%|34.48%(1047)  penetration=0|0(0)  haste=38.23%|27.82%(912)  mp5=0|0(0)
+  Attack Stats  power=7929|5375(2473)  hit=12.93%|12.93%(424)  crit=63.39%|53.21%(1047)  expertise=26.08|26.08(140)  penetration=23.08%|23.08%(323)  haste=68.29%|36.16%(912)
+  Defense Stats:  armor=15106|12434(8688)  blockv=202|72(0)  defense=0|0(0)  miss=0.00%|0.00%  dodge=0.00%|0.00%(0)  parry=0.00%|0.00%(0)  block=0.00%|0.00%(0) crit=13.90%|13.90%
+  Glyphs: windfury_weapon/stormstrike/feral_spirit
+  Priorities:
+    flask,type=endless_rage/food,type=fish_feast/windfury_weapon,weapon=main
+    flametongue_weapon,weapon=off/strength_of_earth_totem/windfury_totem/auto_attack
+    snapshot_stats/wind_shear/bloodlust,time_to_die<=60/fire_elemental_totem/spirit_wolf
+    speed_potion
+    lightning_bolt,if=buff.maelstrom_weapon.stack=5&buff.maelstrom_weapon.react
+    stormstrike/flame_shock,if=!ticking/earth_shock/magma_totem/fire_nova
+    lightning_shield/lava_lash/shamanistic_rage,tier10_2pc_melee=1/shamanistic_rage
+  Actions:
+    earth_shock       Count= 21.0|13.72sec  DPE=  5336| 3%  DPET=  4351  DPR=   7.2  pDPS= 374  Miss=0.00%  Hit=3480|2458|4595  Crit= 7268| 5136| 9605|49.0%
+    fire_nova         Count= 36.5| 8.18sec  DPE=  4065| 4%  DPET=  3322  DPR=   4.2  pDPS= 495  Miss=0.00%  Hit=2660|2424|3332  Crit= 5557| 5070| 6965|48.5%
+    flame_shock       Count= 19.4|15.67sec  DPE=  7486| 4%  DPET=  6133  DPR=  10.7  pDPS= 484  Miss=0.00%  Hit=1484|1317|1933  Crit= 3108| 2759| 4041|48.8%  TickCount=114  MissTick=0.0%  Tick=582|506|781  CritTick=1217|1058|1632|48.4%
+    flametongue       Count=310.6| 0.96sec  DPE=   759| 6%  DPET=   inf  DPR=   0.0  pDPS= 786  Miss=0.00%  Hit= 599| 523| 791  Crit=  926|  808| 1222|48.8%
+    lava_lash         Count= 33.8| 8.77sec  DPE=  3336| 3%  DPET=  2021  DPR=  19.1  pDPS= 376  Miss=0.00%  Hit=1926|1678|2708  Crit= 3962| 3457| 5578|69.2%
+    lightning_bolt    Count= 51.1| 5.85sec  DPE=  7573|11%  DPET=  6199  DPR=  17.3  pDPS=1290  Miss=0.00%  Hit=4954|3415|6764  Crit=10345| 7138|14137|48.6%
+    lightning_shield  Count= 38.0| 7.70sec  DPE=  2505| 3%  DPET= 16486  DPR=   0.0  pDPS= 317  Miss=0.00%  Hit=2505|1762|3471
+    magma_totem       Count=  8.7|21.91sec  DPE= 13462| 3%  DPET= 11705  DPR=  12.1  pDPS= 389  Miss=0.00%  TickCount=81  MissTick=0.0%  Tick=936|856|1182  CritTick=1957|1788|2471|48.8%
+    melee_main_hand   Count=264.7| 1.14sec  DPE=  3367|24%  DPET=  2977  DPR=   0.0  pDPS=2973  Miss=8.00%  Hit=2128|1802|3001  Crit= 4422| 3713| 6183|66.9%  Glance=1609|24.1%
+    melee_off_hand    Count=263.2| 1.14sec  DPE=  1684|12%  DPET=  1480  DPR=   0.0  pDPS=1478  Miss=8.07%  Hit=1071| 903|1446  Crit= 2213| 1856| 3091|66.9%  Glance= 805|24.0%
+    stormstrike       Count= 69.8| 8.69sec  DPE=  2787| 5%  DPET=  3379  DPR=  15.9  pDPS= 649  Miss=0.00%  Hit=1607| 905|3001  Crit= 3323| 1862| 6183|68.8%
+    windfury          Count= 80.7| 7.44sec  DPE=  5759|13%  DPET=   inf  DPR=   0.0  pDPS=1550  Miss=0.00%  Hit=3328|2825|4602  Crit= 6861| 5820| 9481|68.8%
+   fire_elemental  (DPS=1497.6)
+    fire_blast        Count= 19.7| 6.00sec  DPE=  1685| 1%  DPET=   inf  DPR=   6.1  pDPS= 110  Miss=0.00%  Hit=1582|1466|1817  Crit= 2373| 2200| 2726|13.0%
+    fire_melee        Count= 19.4| 5.95sec  DPE=  3991| 2%  DPET=  1996  DPR=   0.0  pDPS= 258  Miss=0.00%  Hit=4111|3514|5443  Crit= 8233| 7094|10885|3.1%  Glance=3081|24.2%
+    fire_nova         Count= 20.0| 6.00sec  DPE=  3129| 2%  DPET=  1252  DPR=  15.1  pDPS= 208  Miss=0.00%  Hit=2937|2647|3526  Crit= 4401| 3979| 5289|13.1%
+    fire_shield       Count= 41.0| 3.00sec  DPE=   165| 0%  DPET=    55  DPR=   0.0  pDPS=  23  Miss=0.00%  Hit= 159| 150| 177  Crit=  238|  225|  265|12.6%
+   spirit_wolf  (DPS=581.1)
+    wolf_melee        Count= 76.9| 2.97sec  DPE=  1714| 4%  DPET=  1438  DPR=   0.0  pDPS= 440  Miss=0.00%  Hit=1676|1490|2058  Crit= 3350| 2979| 4116|8.2%  Glance=1257|23.8%
+  Constant Buffs: arcane_brilliance/blessing_of_kings/blessing_of_might/blessing_of_wisdom/divine_spirit/fortitude
+  Constant Buffs: mark_of_the_wild/replenishment
+  Dynamic Buffs:
+    ashen_band_of_endless_vengeance : start=4.2   refresh=0.0    interval= 76.1|76.1   uptime=14%  trigger= 2%
+    berserking_mh                   : start=7.5   refresh=8.3    interval= 40.1|18.1   uptime=54%  benefit=55%  trigger= 4%
+    berserking_oh                   : start=7.1   refresh=6.0    interval= 41.7|21.4   uptime=48%  benefit=49%  trigger= 4%
+    bloodlust                       : start=1.0   refresh=0.0    interval=  0.0|0.0    uptime=13%  benefit=17%
+    elemental_devastation           : start=8.6   refresh=35.9   interval= 35.0|6.6    uptime=84%  benefit=84%
+    flurry                          : start=30.7  refresh=449.4  interval=  9.8|0.6    uptime=98%  benefit=97%
+    herkuml_war_token               : start=1.0   refresh=668.8  interval=  0.0|0.4    uptime=100%
+    lightning_shield                : start=4.7   refresh=0.0    interval= 68.0|68.0   uptime=93%  benefit=93%
+    maelstrom_weapon                : start=51.9  refresh=238.0  interval=  5.8|1.0    uptime=83%  benefit=90%  trigger=43%
+    nature_vulnerability            : start=13.5  refresh=21.4   interval= 22.3|8.7    uptime=91%  benefit=93%
+    shamanistic_rage                : start=4.5   refresh=0.0    interval= 70.1|70.1   uptime=22%  benefit=22%
+    sharpened_twilight_scale        : start=7.0   refresh=0.0    interval= 46.2|46.2   uptime=35%  trigger=34%
+    speed_potion                    : start=1.0   refresh=0.0    interval=  0.0|0.0    uptime= 5%
+    tier10_2pc_melee                : start=4.5   refresh=0.0    interval= 70.1|70.1   uptime=22%  benefit=22%
+    tier10_4pc_melee                : start=6.2   refresh=1.4    interval= 43.8|35.0   uptime=23%  benefit=23%  trigger=15%
+  Procs:
+    409.5 |   0.94sec : judgement_of_wisdom
+     40.4 |   7.44sec : windfury
+  Gains:
+     5579.6 : blessing_of_wisdom   (overflow=14.7%)
+    18186.0 : initial_mana       
+    31413.0 : judgement_of_wisdom  (overflow=12.7%)
+     9300.0 : replenishment        (overflow=14.6%)
+    63677.5 : shamanistic_rage     (overflow=66.5%)
+  Pet "fire_elemental" Gains:
+     8215.0 : initial_mana       
+     1380.5 : judgement_of_wisdom
+
+Auras and De-Buffs:
+  Constant: abominations_might/arcane_empowerment/battle_shout/bleeding/blood_frenzy/blood_plague/crypt_fever
+  Constant: curse_of_elements/devotion_aura/earth_and_moon/ebon_plaguebringer/elemental_oath/expose_armor/faerie_fire
+  Constant: ferocious_inspiration/flametongue_totem/frost_fever/heart_of_the_crusader/horn_of_winter/hunters_mark
+  Constant: improved_faerie_fire/improved_icy_talons/improved_moonkin/improved_scorch/improved_shadow_bolt
+  Constant: infected_wounds/insect_swarm/judgement_of_wisdom/judgements_of_the_just/leader_of_the_pack
+  Constant: mana_spring_totem/mangle/master_poisoner/misery/moonkin/poisoned/rampage/sanctified_retribution
+  Constant: savage_combat/strength_of_earth/sunder_armor/swift_retribution/thunder_clap/totem_of_wrath
+  Constant: totem_of_wrath_debuff/trauma/trueshot/unleashed_rage/windfury_totem/winters_chill/wrath_of_air
+  Dynamic:
+
+Waiting:
+     2.9% : Shaman_T10_19_52_00
+
+Baseline Performance:
+  TotalEvents   = 3953153
+  MaxEventQueue = 58
+  TargetHealth  = 10660913
+  SimSeconds    = 300102
+  CpuSeconds    = 1.124
+  SpeedUp       = 266995
+
+RNG global Actual/Expected Roll=1.000055 Range=1.000000 Gauss=0.999938
+
