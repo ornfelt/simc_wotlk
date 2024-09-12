@@ -58,3 +58,7 @@ Also see READ_ME_FIRST.txt and Examples.simc
 .\simc.exe armory=us,illidan,john calculate_scale_factors=1 html=john.html
 
 https://github.com/simulationcraft/simc
+
+See:
+
+https://simc.heroicstrike.org/BC_Downloads/

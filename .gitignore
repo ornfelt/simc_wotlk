@@ -18,3 +18,4 @@ tmp/
 Release/
 Debug/
 .vs/
+engine/build
